@@ -1,0 +1,17 @@
+{
+  "_comment": "AI Tech Radar Korea — 로컬 전용 제휴 링크 설정 파일 (build_site.py가 빌드 시 참조하며, 공개 HTML에는 URL 매핑만 주입됩니다)",
+  "links": {
+    "make": "https://www.make.com/en/register?pc=aitechradar",
+    "n8n": "https://n8n.io/cloud/?ref=aitechradar",
+    "lindy": "https://www.lindy.ai/?via=aitechradar",
+    "zapier": "https://zapier.com/pricing",
+    "cursor": "https://www.cursor.com/pricing",
+    "windsurf": "https://codeium.com/windsurf?ref=aitechradar",
+    "lovable": "https://lovable.dev/?via=aitechradar",
+    "bolt": "https://bolt.new/",
+    "elevenlabs": "https://elevenlabs.io/?from=aitechradar",
+    "heygen": "https://www.heygen.com/?sid=rewardful&via=aitechradar",
+    "runway": "https://runwayml.com/pricing",
+    "kling": "https://klingai.com/"
+  }
+}

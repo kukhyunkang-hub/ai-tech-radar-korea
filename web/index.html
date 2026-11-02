@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tech Radar Korea — 2026 AI & 노코드 12대 툴 실전 과금 비교 디렉토리</title>
+  <meta name="description" content="AI Tech Radar Korea 리서치랩 공식 과금 검증 (2026년 11월 최신 공식 가격표 기준). 업무 자동화(Make, n8n, Zapier, Lindy), AI 바이브 코딩(Cursor, Windsurf, Lovable, Bolt.new), AI 영상·보이스(ElevenLabs, HeyGen, Runway, Kling AI) 실시간 요금 계산기 및 솔직 단점 비교." />
+  <meta property="og:title" content="AI Tech Radar Korea — 2026 AI & 노코드 12대 툴 실전 과금 비교 디렉토리" />
+  <meta property="og:description" content="업무 자동화·AI 코딩·AI 영상 12대 대표 툴의 숨겨진 크레딧·토큰·태스크 과금 함정을 10초 만에 시뮬레이션하세요." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- JSON-LD Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI Tech Radar Korea — AI & 노코드 12대 툴 실전 과금 비교 디렉토리",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "AI Tech Radar Korea 리서치랩 공식 과금 검증 기반 3대 카테고리 12개 AI & 노코드 툴 실시간 과금 시뮬레이터 및 비교 디렉토리",
+    "dateModified": "2026-11-02",
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Tech Radar Korea Research Lab"
+    }
+  }
+  </script>
+
+  <style> :root{--bg-primary: #0b0f19;--bg-secondary: #111827;--bg-card: #1a2234;--bg-card-hover: #212c42;--bg-elevated: #243049;--text-primary: #f8fafc;--text-secondary: #cbd5e1;--text-muted: #94a3b8;--border-color: #2e3b52;--accent-primary: #6366f1;--accent-primary-hover: #4f46e5;--accent-make: #9333ea;--accent-n8n: #ff6d5a;--accent-lindy: #10b981;--accent-zapier: #f97316;--accent-cursor: #3b82f6;--accent-windsurf: #06b6d4;--accent-elevenlabs: #ec4899;--accent-heygen: #8b5cf6;--accent-kling: #14b8a6;--danger: #ef4444;--warning: #f59e0b;--success: #10b981;--shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);--radius-md: 12px;--radius-lg: 16px;--radius-xl: 22px;} html.light{--bg-primary: #f8fafc;--bg-secondary: #f1f5f9;--bg-card: #ffffff;--bg-card-hover: #f8fafc;--bg-elevated: #e2e8f0;--text-primary: #0f172a;--text-secondary: #334155;--text-muted: #64748b;--border-color: #cbd5e1;--shadow-lg: 0 15px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);} *{box-sizing: border-box;margin: 0;padding: 0;} body{font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", sans-serif;background-color: var(--bg-primary);color: var(--text-primary);line-height: 1.65;letter-spacing: -0.015em;-webkit-font-smoothing: antialiased;} a{color: inherit;text-decoration: none;} .container{max-width: 1260px;margin: 0 auto;padding: 0 20px;} /* Emergency Relay.app Top Banner */ .emergency-banner{background: linear-gradient(90deg, #991b1b 0%, #dc2626 50%, #991b1b 100%);color: #ffffff;padding: 10px 16px;font-size: 0.9rem;font-weight: 600;text-align: center;border-bottom: 1px solid rgba(255, 255, 255, 0.2);position: relative;z-index: 60;} .emergency-banner-inner{display: flex;align-items: center;justify-content: center;gap: 10px;flex-wrap: wrap;} .emergency-banner .badge-urgent{background: #ffffff;color: #b91c1c;font-size: 0.74rem;font-weight: 800;padding: 2px 8px;border-radius: 999px;text-transform: uppercase;letter-spacing: 0.03em;} .emergency-banner .banner-link{background: rgba(0, 0, 0, 0.28);color: #fef08a;padding: 4px 12px;border-radius: 999px;font-size: 0.84rem;font-weight: 700;border: 1px solid rgba(254, 240, 138, 0.4);transition: all 0.2s ease;cursor: pointer;} .emergency-banner .banner-link:hover{background: rgba(0, 0, 0, 0.5);transform: translateY(-1px);} /* Sticky Header (Responsive & Compact on Mobile) */ .site-header{position: sticky;top: 0;z-index: 50;background: rgba(11, 15, 25, 0.88);backdrop-filter: blur(14px);border-bottom: 1px solid var(--border-color);padding: 12px 0;} html.light .site-header{background: rgba(248, 250, 252, 0.92);} .header-inner{display: flex;align-items: center;justify-content: space-between;gap: 14px;} .brand-logo{display: flex;align-items: center;gap: 10px;font-weight: 800;font-size: 1.15rem;flex-shrink: 0;} .brand-icon{width: 32px;height: 32px;border-radius: 9px;background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);display: flex;align-items: center;justify-content: center;color: #fff;font-weight: 900;font-size: 1rem;box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);} .brand-badge{font-size: 0.72rem;font-weight: 700;padding: 3px 8px;border-radius: 6px;background: rgba(99, 102, 241, 0.16);color: #818cf8;border: 1px solid rgba(99, 102, 241, 0.3);white-space: nowrap;} .nav-links{display: flex;align-items: center;gap: 18px;font-size: 0.9rem;font-weight: 600;color: var(--text-secondary);overflow-x: auto;scrollbar-width: none;white-space: nowrap;} .nav-links::-webkit-scrollbar{display: none;} .nav-links a:hover{color: var(--accent-primary);} .header-actions{display: flex;align-items: center;gap: 8px;flex-shrink: 0;} .btn-icon{background: var(--bg-card);color: var(--text-primary);border: 1px solid var(--border-color);padding: 7px 12px;border-radius: 8px;font-size: 0.84rem;font-weight: 600;cursor: pointer;display: inline-flex;align-items: center;gap: 6px;transition: all 0.2s;white-space: nowrap;} .btn-icon:hover{background: var(--bg-card-hover);border-color: var(--accent-primary);} @media (max-width: 768px){.site-header{padding: 8px 0;} .header-inner{flex-wrap: wrap;gap: 8px;} .brand-logo{font-size: 1.02rem;} .nav-links{order: 3;width: 100%;padding-top: 6px;border-top: 1px solid rgba(148, 163, 184, 0.15);gap: 14px;font-size: 0.83rem;}}
+/* Hero Section */ .hero-section{padding: 52px 0 36px;text-align: center;position: relative;overflow: hidden;} .hero-eyebrow{display: inline-flex;align-items: center;gap: 8px;padding: 6px 14px;border-radius: 999px;background: rgba(99, 102, 241, 0.12);border: 1px solid rgba(99, 102, 241, 0.3);color: #818cf8;font-size: 0.84rem;font-weight: 700;margin-bottom: 18px;flex-wrap: wrap;justify-content: center;} .hero-title{font-size: clamp(1.8rem, 3.8vw, 2.9rem);font-weight: 900;line-height: 1.24;margin-bottom: 16px;max-width: 980px;margin-left: auto;margin-right: auto;} .hero-title .gradient-text{background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #34d399 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;} .hero-subtitle{font-size: 1.04rem;color: var(--text-secondary);max-width: 820px;margin: 0 auto 30px;} /* Top 3 Category Winner Cards */ .tldr-grid{display: grid;grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));gap: 18px;text-align: left;margin-top: 22px;} .tldr-card{background: var(--bg-card);border: 1px solid var(--border-color);border-radius: var(--radius-lg);padding: 22px;position: relative;transition: transform 0.2s, border-color 0.2s;display: flex;flex-direction: column;justify-content: space-between;box-shadow: var(--shadow-lg);} .tldr-card:hover{transform: translateY(-3px);} .tldr-card.make-card{border-top: 4px solid var(--accent-make);} .tldr-card.cursor-card{border-top: 4px solid var(--accent-cursor);} .tldr-card.eleven-card{border-top: 4px solid var(--accent-elevenlabs);} .tldr-card.n8n-card{border-top: 4px solid var(--accent-n8n);} .tldr-card.lindy-card{border-top: 4px solid var(--accent-lindy);} .tldr-role{font-size: 0.78rem;font-weight: 800;text-transform: uppercase;letter-spacing: 0.03em;margin-bottom: 8px;display: flex;align-items: center;justify-content: space-between;gap: 8px;} .tldr-card h3{font-size: 1.2rem;font-weight: 800;margin-bottom: 10px;} .tldr-card p{font-size: 0.91rem;color: var(--text-secondary);margin-bottom: 18px;} /* CTA Buttons */ .btn-cta{display: inline-flex;align-items: center;justify-content: center;gap: 8px;width: 100%;padding: 12px 16px;border-radius: 10px;font-weight: 800;font-size: 0.9rem;text-align: center;cursor: pointer;transition: all 0.2s ease;border: none;color: #ffffff;} .btn-cta.make{background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%);box-shadow: 0 4px 14px rgba(147, 51, 234, 0.32);} .btn-cta.make:hover{background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);transform: translateY(-1px);} .btn-cta.n8n{background: linear-gradient(135deg, #ff6d5a 0%, #e11d48 100%);box-shadow: 0 4px 14px rgba(255, 109, 90, 0.32);} .btn-cta.n8n:hover{background: linear-gradient(135deg, #fb7185 0%, #f43f5e 100%);transform: translateY(-1px);} .btn-cta.lindy{background: linear-gradient(135deg, #10b981 0%, #059669 100%);box-shadow: 0 4px 14px rgba(16, 185, 129, 0.32);} .btn-cta.lindy:hover{background: linear-gradient(135deg, #34d399 0%, #10b981 100%);transform: translateY(-1px);} .btn-cta.cursor{background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);box-shadow: 0 4px 14px rgba(59, 130, 246, 0.32);} .btn-cta.cursor:hover{background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);transform: translateY(-1px);} .btn-cta.windsurf{background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);box-shadow: 0 4px 14px rgba(6, 182, 212, 0.32);} .btn-cta.windsurf:hover{background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);transform: translateY(-1px);} .btn-cta.elevenlabs{background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);box-shadow: 0 4px 14px rgba(236, 72, 153, 0.32);} .btn-cta.elevenlabs:hover{background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);transform: translateY(-1px);} .btn-cta.heygen{background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);box-shadow: 0 4px 14px rgba(139, 92, 246, 0.32);} .btn-cta.heygen:hover{background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);transform: translateY(-1px);} .btn-cta.kling{background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);box-shadow: 0 4px 14px rgba(20, 184, 166, 0.32);} .btn-cta.kling:hover{background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);transform: translateY(-1px);} .btn-cta.outline{background: var(--bg-secondary);border: 1px solid var(--border-color);color: var(--text-secondary);} .btn-cta.outline:hover{border-color: var(--accent-primary);color: var(--text-primary);background: var(--bg-card-hover);} .dual-cta-row{display: grid;grid-template-columns: 1fr 1.35fr;gap: 10px;margin-top: 8px;} @media (max-width: 520px){.dual-cta-row{grid-template-columns: 1fr;}}
+/* Section Styling */ .section{padding: 48px 0;border-top: 1px solid var(--border-color);} .section-header{margin-bottom: 26px;} .section-tag{display: inline-block;font-size: 0.78rem;font-weight: 800;color: #818cf8;background: rgba(99, 102, 241, 0.12);padding: 4px 10px;border-radius: 6px;margin-bottom: 8px;text-transform: uppercase;} .section-title{font-size: clamp(1.45rem, 3vw, 2.05rem);font-weight: 900;margin-bottom: 8px;} .section-desc{color: var(--text-secondary);font-size: 0.96rem;} /* Feature 1: Dual Interactive Billing Simulator */ .sim-mode-tabs{display: flex;flex-wrap: wrap;gap: 10px;margin-bottom: 20px;} .sim-mode-tab{background: var(--bg-card);color: var(--text-secondary);border: 2px solid var(--border-color);padding: 12px 20px;border-radius: 12px;font-size: 0.95rem;font-weight: 800;cursor: pointer;transition: all 0.2s;} .sim-mode-tab:hover{border-color: var(--accent-primary);color: var(--text-primary);} .sim-mode-tab.active{background: var(--accent-primary);color: #ffffff;border-color: var(--accent-primary);box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35);} .simulator-wrapper{background: var(--bg-card);border: 1px solid var(--border-color);border-radius: var(--radius-xl);padding: 28px;box-shadow: var(--shadow-lg);} .simulator-controls{display: grid;grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));gap: 24px;padding-bottom: 24px;border-bottom: 1px solid var(--border-color);margin-bottom: 24px;} .slider-box{background: var(--bg-secondary);padding: 18px;border-radius: var(--radius-md);border: 1px solid var(--border-color);} .slider-label-row{display: flex;justify-content: space-between;align-items: center;margin-bottom: 12px;gap: 8px;} .slider-title{font-weight: 700;font-size: 0.96rem;} .slider-value-badge{background: var(--accent-primary);color: #fff;font-weight: 800;font-size: 0.95rem;padding: 4px 11px;border-radius: 8px;white-space: nowrap;} input[type="range"]{width: 100%;height: 8px;border-radius: 6px;background: var(--bg-elevated);outline: none;accent-color: var(--accent-primary);cursor: pointer;margin-bottom: 10px;} .slider-scale{display: flex;justify-content: space-between;font-size: 0.76rem;color: var(--text-muted);} .preset-bar{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: 12px;margin-bottom: 22px;} .preset-buttons{display: flex;flex-wrap: wrap;gap: 8px;} .btn-preset{background: var(--bg-secondary);color: var(--text-secondary);border: 1px solid var(--border-color);padding: 7px 14px;border-radius: 999px;font-size: 0.83rem;font-weight: 700;cursor: pointer;transition: all 0.2s;} .btn-preset:hover, .btn-preset.active{background: var(--accent-primary);color: #fff;border-color: var(--accent-primary);} .billing-toggle{display: inline-flex;background: var(--bg-secondary);border: 1px solid var(--border-color);border-radius: 999px;padding: 4px;} .billing-toggle button{background: transparent;border: none;color: var(--text-secondary);padding: 5px 14px;border-radius: 999px;font-size: 0.81rem;font-weight: 700;cursor: pointer;} .billing-toggle button.active{background: var(--accent-primary);color: #fff;} .chart-box{background: var(--bg-secondary);border: 1px solid var(--border-color);border-radius: var(--radius-md);padding: 20px;margin-bottom: 24px;} .chart-title{font-size: 0.92rem;font-weight: 800;color: var(--text-secondary);margin-bottom: 14px;display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;gap: 8px;} .savings-pill{background: rgba(16, 185, 129, 0.16);color: #34d399;border: 1px solid rgba(16, 185, 129, 0.35);padding: 4px 12px;border-radius: 999px;font-size: 0.83rem;font-weight: 800;} .bar-row{display: grid;grid-template-columns: 140px 1fr 120px;align-items: center;gap: 12px;margin-bottom: 12px;} .bar-row:last-child{margin-bottom: 0;} .bar-label{font-weight: 700;font-size: 0.88rem;display: flex;align-items: center;gap: 6px;} .bar-track{width: 100%;height: 22px;background: var(--bg-elevated);border-radius: 999px;overflow: hidden;position: relative;} .bar-fill{height: 100%;border-radius: 999px;transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);min-width: 6%;} .bar-fill.zapier{background: linear-gradient(90deg, #f97316, #ef4444);} .bar-fill.make{background: linear-gradient(90deg, #9333ea, #c084fc);} .bar-fill.n8n{background: linear-gradient(90deg, #ff6d5a, #fb923c);} .bar-fill.lindy{background: linear-gradient(90deg, #10b981, #34d399);} .bar-fill.cursor{background: linear-gradient(90deg, #3b82f6, #60a5fa);} .bar-fill.windsurf{background: linear-gradient(90deg, #06b6d4, #22d3ee);} .bar-price{text-align: right;font-weight: 800;font-size: 0.92rem;} .sim-cards-grid{display: grid;grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));gap: 16px;} .sim-card{background: var(--bg-secondary);border: 2px solid var(--border-color);border-radius: var(--radius-lg);padding: 20px;display: flex;flex-direction: column;justify-content: space-between;position: relative;transition: all 0.25s ease;} .sim-card.winner-make{border-color: var(--accent-make);} .sim-card.winner-n8n{border-color: var(--accent-n8n);} .sim-card.warning-zapier{border-color: rgba(239, 68, 68, 0.5);} .sim-card.agent-lindy{border-color: rgba(16, 185, 129, 0.5);} .sim-card.winner-cursor{border-color: var(--accent-cursor);} .sim-card.winner-windsurf{border-color: var(--accent-windsurf);} .sim-badge{display: inline-flex;align-items: center;gap: 4px;font-size: 0.74rem;font-weight: 800;padding: 4px 10px;border-radius: 999px;margin-bottom: 10px;width: fit-content;} .sim-badge.danger{background: rgba(239, 68, 68, 0.16);color: #f87171;border: 1px solid rgba(239, 68, 68, 0.35);} .sim-badge.make{background: rgba(147, 51, 234, 0.18);color: #d8b4fe;border: 1px solid rgba(147, 51, 234, 0.4);} .sim-badge.n8n{background: rgba(255, 109, 90, 0.18);color: #fda4af;border: 1px solid rgba(255, 109, 90, 0.4);} .sim-badge.lindy{background: rgba(16, 185, 129, 0.18);color: #6ee7b7;border: 1px solid rgba(16, 185, 129, 0.4);} .sim-badge.cursor{background: rgba(59, 130, 246, 0.18);color: #93c5fd;border: 1px solid rgba(59, 130, 246, 0.4);} .sim-badge.windsurf{background: rgba(6, 182, 212, 0.18);color: #67e8f9;border: 1px solid rgba(6, 182, 212, 0.4);} .sim-tool-name{font-size: 1.15rem;font-weight: 800;margin-bottom: 4px;} .sim-price-big{font-size: 1.85rem;font-weight: 900;line-height: 1.15;margin: 6px 0;} .sim-price-big span{font-size: 0.85rem;font-weight: 600;color: var(--text-muted);} .sim-usage-box{background: var(--bg-card);border: 1px solid var(--border-color);border-radius: 8px;padding: 10px 12px;margin: 10px 0;font-size: 0.83rem;} .sim-note{font-size: 0.83rem;color: var(--text-secondary);margin-bottom: 14px;} /* Feature 2: 3-Way Directory Filter Bar (Category + Role + Search) */ .directory-controls-box{background: var(--bg-card);border: 1px solid var(--border-color);border-radius: var(--radius-lg);padding: 20px;margin-bottom: 24px;display: flex;flex-direction: column;gap: 16px;} .filter-row{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: 12px;} .filter-tabs{display: flex;flex-wrap: wrap;gap: 8px;} .filter-tab{background: var(--bg-secondary);color: var(--text-secondary);border: 1px solid var(--border-color);padding: 9px 15px;border-radius: 10px;font-size: 0.88rem;font-weight: 700;cursor: pointer;transition: all 0.2s;} .filter-tab:hover{border-color: var(--accent-primary);color: var(--text-primary);} .filter-tab.active{background: var(--accent-primary);color: #ffffff;border-color: var(--accent-primary);box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);} .role-pills{display: flex;flex-wrap: wrap;gap: 8px;align-items: center;} .role-pill{background: transparent;color: var(--text-secondary);border: 1px solid var(--border-color);padding: 6px 12px;border-radius: 999px;font-size: 0.82rem;font-weight: 700;cursor: pointer;transition: all 0.2s;} .role-pill.active, .role-pill:hover{background: rgba(99, 102, 241, 0.18);color: #818cf8;border-color: #818cf8;} .search-input-wrap{position: relative;flex: 1;min-width: 260px;} .search-input{width: 100%;padding: 10px 14px 10px 38px;border-radius: 10px;border: 1px solid var(--border-color);background: var(--bg-secondary);color: var(--text-primary);font-size: 0.9rem;} .search-input:focus{outline: none;border-color: var(--accent-primary);} .search-icon{position: absolute;left: 12px;top: 50%;transform: translateY(-50%);font-size: 0.9rem;color: var(--text-muted);} .tools-grid{display: grid;grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));gap: 22px;} @media (max-width: 640px){.tools-grid{grid-template-columns: 1fr;} .bar-row{grid-template-columns: 100px 1fr 85px;}}
+.tool-card{background: var(--bg-card);border: 1px solid var(--border-color);border-radius: var(--radius-xl);padding: 26px;display: flex;flex-direction: column;justify-content: space-between;box-shadow: var(--shadow-lg);transition: all 0.25s ease;} .tool-card:hover{border-color: rgba(99, 102, 241, 0.5);} .tool-card-header{display: flex;justify-content: space-between;align-items: flex-start;gap: 12px;margin-bottom: 14px;} .tool-category-tag{font-size: 0.75rem;font-weight: 800;color: #818cf8;margin-bottom: 4px;} .tool-title{font-size: 1.4rem;font-weight: 900;margin: 2px 0;} .tool-best-for{background: var(--bg-secondary);border-left: 3px solid var(--accent-primary);padding: 10px 14px;border-radius: 0 8px 8px 0;font-size: 0.87rem;color: var(--text-secondary);margin-bottom: 16px;} .billing-rule-box{background: rgba(99, 102, 241, 0.07);border: 1px solid rgba(99, 102, 241, 0.25);border-radius: var(--radius-md);padding: 14px;margin-bottom: 16px;font-size: 0.85rem;} .tiers-mini-table{width: 100%;border-collapse: collapse;margin-bottom: 16px;font-size: 0.83rem;} .tiers-mini-table th, .tiers-mini-table td{padding: 8px 10px;border-bottom: 1px solid var(--border-color);text-align: left;} .tiers-mini-table th{color: var(--text-muted);font-weight: 700;background: var(--bg-secondary);} .pros-cons-grid{display: grid;grid-template-columns: 1fr;gap: 12px;margin-bottom: 16px;} .pros-box{background: rgba(16, 185, 129, 0.06);border: 1px solid rgba(16, 185, 129, 0.25);border-radius: var(--radius-md);padding: 14px;} .cons-box{background: rgba(239, 68, 68, 0.07);border: 1px solid rgba(239, 68, 68, 0.28);border-radius: var(--radius-md);padding: 14px;} .box-heading{font-size: 0.84rem;font-weight: 800;margin-bottom: 8px;display: flex;align-items: center;gap: 6px;} .pros-box .box-heading{color: #34d399;} .cons-box .box-heading{color: #f87171;} .feature-list{list-style: none;font-size: 0.85rem;color: var(--text-secondary);} .feature-list li{position: relative;padding-left: 18px;margin-bottom: 6px;} .pros-box .feature-list li::before{content: "✓";position: absolute;left: 0;color: #10b981;font-weight: 900;} .cons-box .feature-list li::before{content: "!";position: absolute;left: 4px;color: #ef4444;font-weight: 900;} .cross-sell-banner{margin-top: 10px;padding-top: 10px;border-top: 1px dashed rgba(239, 68, 68, 0.35);display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: 8px;font-size: 0.81rem;} .btn-cross-sell{display: inline-flex;align-items: center;gap: 6px;padding: 6px 12px;border-radius: 8px;font-weight: 800;font-size: 0.79rem;background: var(--bg-elevated);color: #fef08a;border: 1px solid rgba(254, 240, 138, 0.35);transition: all 0.2s;} .btn-cross-sell:hover{background: var(--accent-primary);color: #fff;border-color: var(--accent-primary);} /* Feature 3: Deep Report & Class-Based Accordion */ .report-tabs-nav{display: flex;flex-wrap: wrap;gap: 8px;margin-bottom: 20px;border-bottom: 1px solid var(--border-color);padding-bottom: 14px;} .report-tab-btn{background: var(--bg-card);color: var(--text-secondary);border: 1px solid var(--border-color);padding: 10px 16px;border-radius: 10px;font-weight: 700;font-size: 0.89rem;cursor: pointer;transition: all 0.2s;} .report-tab-btn.active{background: var(--accent-primary);color: #fff;border-color: var(--accent-primary);} .report-panel{display: none;background: var(--bg-card);border: 1px solid var(--border-color);border-radius: var(--radius-xl);padding: 26px;box-shadow: var(--shadow-lg);} .report-panel.active{display: block;} .table-responsive{overflow-x: auto;margin: 16px 0;} .comparison-table{width: 100%;border-collapse: collapse;min-width: 760px;font-size: 0.86rem;} .comparison-table th, .comparison-table td{padding: 12px 14px;border: 1px solid var(--border-color);text-align: left;vertical-align: top;} .comparison-table th{background: var(--bg-secondary);font-weight: 800;font-size: 0.9rem;} /* Clean CSS-Class Based Accordion */ .accordion-item{border: 1px solid var(--border-color);border-radius: var(--radius-md);margin-bottom: 12px;overflow: hidden;background: var(--bg-secondary);} .accordion-header{width: 100%;padding: 16px 20px;background: transparent;border: none;color: var(--text-primary);font-weight: 800;font-size: 0.96rem;text-align: left;display: flex;justify-content: space-between;align-items: center;gap: 12px;cursor: pointer;} .accordion-header:hover{background: var(--bg-card-hover);} .accordion-chevron{transition: transform 0.25s ease;font-size: 0.85rem;color: var(--text-muted);flex-shrink: 0;} .accordion-item.open .accordion-chevron{transform: rotate(180deg);color: var(--accent-primary);} .accordion-body{display: none;padding: 14px 20px 18px;font-size: 0.9rem;color: var(--text-secondary);border-top: 1px solid var(--border-color);} .accordion-item.open .accordion-body{display: block;} /* Feature 4: Newsletter + Instant Report Download */ .newsletter-box{background: linear-gradient(135deg, rgba(99, 102, 241, 0.18) 0%, rgba(168, 85, 247, 0.18) 100%);border: 1px solid rgba(99, 102, 241, 0.4);border-radius: var(--radius-xl);padding: 38px 28px;text-align: center;box-shadow: var(--shadow-lg);} .newsletter-form{display: flex;max-width: 720px;margin: 22px auto 14px;gap: 10px;flex-wrap: wrap;justify-content: center;} .newsletter-select{padding: 14px 16px;border-radius: 10px;border: 1px solid var(--border-color);background: var(--bg-primary);color: var(--text-primary);font-size: 0.92rem;font-weight: 700;min-width: 185px;} .newsletter-input{flex: 1;min-width: 240px;padding: 14px 18px;border-radius: 10px;border: 1px solid var(--border-color);background: var(--bg-primary);color: var(--text-primary);font-size: 0.94rem;} .btn-subscribe{background: var(--accent-primary);color: #fff;border: none;padding: 14px 22px;border-radius: 10px;font-weight: 800;font-size: 0.94rem;cursor: pointer;transition: all 0.2s;white-space: nowrap;} .btn-subscribe:hover{background: var(--accent-primary-hover);transform: translateY(-1px);} .instant-download-panel{display: none;max-width: 680px;margin: 16px auto 8px;padding: 18px;border-radius: 12px;background: rgba(16, 185, 129, 0.12);border: 1px solid rgba(16, 185, 129, 0.4);text-align: left;} .instant-download-panel.active{display: block;} .download-btn-row{display: flex;flex-wrap: wrap;gap: 10px;margin-top: 12px;} .site-footer{border-top: 1px solid var(--border-color);padding: 36px 0;font-size: 0.85rem;color: var(--text-muted);text-align: center;} </style>
+</head>
+<body>
+
+  <script>
+    /* __AFFILIATE_CONFIG_START__ */
+    const AFFILIATE_CONFIG = {"make":"https://www.make.com/en/register?pc=aitechradar","n8n":"https://n8n.io/cloud/?ref=aitechradar","lindy":"https://www.lindy.ai/?via=aitechradar","zapier":"https://zapier.com/pricing","cursor":"https://www.cursor.com/pricing","windsurf":"https://codeium.com/windsurf?ref=aitechradar","lovable":"https://lovable.dev/?via=aitechradar","bolt":"https://bolt.new/","elevenlabs":"https://elevenlabs.io/?from=aitechradar","heygen":"https://www.heygen.com/?sid=rewardful&via=aitechradar","runway":"https://runwayml.com/pricing","kling":"https://klingai.com/"};
+    /* __AFFILIATE_CONFIG_END__ */
+  </script>
+
+  <!-- Emergency Relay.app Shutdown Notice Banner -->
+  <div class="emergency-banner">
+    <div class="container emergency-banner-inner">
+      <span class="badge-urgent">긴급 공지</span>
+      <span>🚨 Relay.app 서비스 종료에 따른 직군별 공식 마이그레이션 가이드 & 12대 AI 툴 과금 검증</span>
+      <button type="button" class="banner-link" onclick="jumpToRelayMigration()">대체재 가이드 즉시 보기 ↓</button>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">⚡</div>
+        <span>AI Tech Radar Korea</span>
+        <span class="brand-badge">2026.11 공식 검증</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#billing-simulator">💰 실시간 과금 계산기</a>
+        <a href="#role-directory">🗂️ 12대 툴 디렉토리</a>
+        <a href="#deep-report">📊 심층 비교 & Q&A</a>
+        <a href="#newsletter-section">📥 마스터 리포트 다운로드</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn-icon" onclick="toggleTheme()" id="theme-toggle-btn">
+          ☀️ 라이트 모드
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section & Top 3 Category Winners -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-eyebrow">
+        <span>🔍 AI Tech Radar Korea 리서치랩 공식 과금 검증</span>
+        <span>•</span>
+        <span>2026년 11월 최신 공식 가격표 기준</span>
+      </div>
+      <h1 class="hero-title">
+        업무 자동화 · AI 바이브 코딩 · AI 영상/보이스<br />
+        <span class="gradient-text">2026 글로벌 12대 AI 툴 실전 과금 비교 디렉토리</span>
+      </h1>
+      <p class="hero-subtitle">
+        월 구독료 $20인 줄 알고 결제했다가 <strong>태스크·토큰·크레딧 추가 과금 폭탄</strong>을 맞지 마세요.<br />
+        AI Tech Radar Korea 리서치랩이 직접 검증한 <strong>3대 핵심 카테고리 · 12개 대표 툴의 실제 과금 공식과 치명적 단점</strong>을 10초 만에 비교해 드립니다.
+      </p>
+
+      <!-- Above-the-fold 3 Category Champions -->
+      <div class="tldr-grid">
+        <div class="tldr-card make-card">
+          <div>
+            <div class="tldr-role" style="color: #c084fc;">
+              <span>⚡ 업무 자동화 가성비 1위</span>
+              <span>Core $9/월 • 10,000 Cr</span>
+            </div>
+            <h3>Make & n8n Cloud</h3>
+            <p>
+              똑같은 10단계 자동화 1,000회 실행 시 Zapier($103+) 대비 <strong>Make($9/월)는 80% 이상 비용을 절감</strong>하며, 대량 루프 작업은 <strong>n8n Cloud(€20/월, 단계 수 무제한)</strong>가 압도합니다.
+            </p>
+          </div>
+          <div class="dual-cta-row">
+            <a href="#" data-affiliate="n8n" target="_blank" rel="noopener sponsored" class="btn-cta outline">
+              n8n Cloud (€20)
+            </a>
+            <a href="#" data-affiliate="make" target="_blank" rel="noopener sponsored" class="btn-cta make">
+              👉 Make ($9/월) 시작하기
+            </a>
+          </div>
+        </div>
+
+        <div class="tldr-card cursor-card">
+          <div>
+            <div class="tldr-role" style="color: #60a5fa;">
+              <span>💻 AI 바이브 코딩 & 빌더 1위</span>
+              <span>Pro $15~$20/월</span>
+            </div>
+            <h3>Cursor · Windsurf · Lovable</h3>
+            <p>
+              풀스택 개발 생산성 1위 <strong>Cursor($20/월, 500 Fast + 무제한 Slow)</strong>, 가성비 IDE <strong>Windsurf($15/월)</strong>, 비개발자 웹앱 빌더 1위 <strong>Lovable($20/월)</strong>의 토큰·메시지 차감 함정을 비교하세요.
+            </p>
+          </div>
+          <div class="dual-cta-row">
+            <a href="#" data-affiliate="lovable" target="_blank" rel="noopener sponsored" class="btn-cta outline">
+              Lovable 빌더 보기
+            </a>
+            <a href="#" data-affiliate="cursor" target="_blank" rel="noopener sponsored" class="btn-cta cursor">
+              👉 Cursor 공식 가격표
+            </a>
+          </div>
+        </div>
+
+        <div class="tldr-card eleven-card">
+          <div>
+            <div class="tldr-role" style="color: #f472b6;">
+              <span>🎬 AI 보이스 · 아바타 · 영상 1위</span>
+              <span>Starter $5~$29/월</span>
+            </div>
+            <h3>ElevenLabs · HeyGen · Kling AI</h3>
+            <p>
+              다국어 AI 성우·더빙 1위 <strong>ElevenLabs($5/월~)</strong>, 마케팅 AI 아바타 1위 <strong>HeyGen($29/월)</strong>, 고가성비 모션 영상 대안 <strong>Kling AI(~$10/월)</strong>로 스튜디오 외주비를 90% 절감하세요.
+            </p>
+          </div>
+          <div class="dual-cta-row">
+            <a href="#" data-affiliate="heygen" target="_blank" rel="noopener sponsored" class="btn-cta outline">
+              HeyGen 아바타 보기
+            </a>
+            <a href="#" data-affiliate="elevenlabs" target="_blank" rel="noopener sponsored" class="btn-cta elevenlabs">
+              👉 ElevenLabs ($5~) 시작
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       핵심 기능 1: 듀얼 실시간 과금 계산기 (업무 자동화 + AI 바이브 코딩)
+  ====================================================================== -->
+  <section id="billing-simulator" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Feature 01 • Dual Interactive Billing Simulator</span>
+        <h2 class="section-title">🧮 실시간 과금 시뮬레이터 (자동화 & AI 바이브 코딩)</h2>
+        <p class="section-desc">
+          카테고리 탭을 선택하고 슬라이더를 움직여 보세요. 2026년 11월 최신 공식 가격표에 기반해 실제 월 예상 비용을 즉시 계산합니다.
+        </p>
+      </div>
+
+      <!-- Simulator Mode Switcher Tabs -->
+      <div class="sim-mode-tabs" role="tablist">
+        <button type="button" class="sim-mode-tab active" id="sim-tab-automation" onclick="switchSimulatorMode('automation')">
+          ⚡ 1. 업무 자동화 과금 계산기 (Make vs n8n vs Zapier vs Lindy)
+        </button>
+        <button type="button" class="sim-mode-tab" id="sim-tab-coding" onclick="switchSimulatorMode('coding')">
+          💻 2. AI 바이브 코딩 과금 계산기 (Cursor vs Windsurf vs Lovable vs Bolt)
+        </button>
+      </div>
+
+      <!-- Simulator Panel A: Workflow Automation -->
+      <div class="simulator-wrapper" id="sim-panel-automation">
+        <div class="preset-bar">
+          <div class="preset-buttons" id="auto-preset-buttons">
+            <button type="button" class="btn-preset" onclick="setSimulatorPreset(300, 2, this)">⚡ 초단순 연동 (월 300회 × 2단계)</button>
+            <button type="button" class="btn-preset active" onclick="setSimulatorPreset(1000, 10, this)">🔥 실무 표준 (월 1,000회 × 10단계)</button>
+            <button type="button" class="btn-preset" onclick="setSimulatorPreset(2500, 15, this)">🚀 헤비 AI 파이프라인 (월 2,500회 × 15단계)</button>
+            <button type="button" class="btn-preset" onclick="setSimulatorPreset(6000, 20, this)">🏢 대규모 데이터 루프 (월 6,000회 × 20단계)</button>
+          </div>
+          <div class="billing-toggle" role="group" aria-label="결제 주기 선택">
+            <button type="button" id="btn-annual" class="active" onclick="setBillingCycle('annual')">연간 결제 할인가</button>
+            <button type="button" id="btn-monthly" onclick="setBillingCycle('monthly')">월간 결제 정가</button>
+          </div>
+        </div>
+
+        <div class="simulator-controls">
+          <div class="slider-box">
+            <div class="slider-label-row">
+              <label for="runs-slider" class="slider-title">① 월 자동화 실행 횟수 (Monthly Runs)</label>
+              <span class="slider-value-badge" id="runs-display">1,000회 / 월</span>
+            </div>
+            <input type="range" id="runs-slider" min="100" max="10000" step="100" value="1000" oninput="updateSimulator()" />
+            <div class="slider-scale">
+              <span>100회</span>
+              <span>2,500회</span>
+              <span>5,000회</span>
+              <span>7,500회</span>
+              <span>10,000회</span>
+            </div>
+          </div>
+
+          <div class="slider-box">
+            <div class="slider-label-row">
+              <label for="steps-slider" class="slider-title">② 워크플로우 평균 단계 수 (Steps)</label>
+              <span class="slider-value-badge" id="steps-display">10단계 (트리거 1 + 액션 9)</span>
+            </div>
+            <input type="range" id="steps-slider" min="2" max="20" step="1" value="10" oninput="updateSimulator()" />
+            <div class="slider-scale">
+              <span>2단계 (단순)</span>
+              <span>6단계</span>
+              <span>10단계 (표준)</span>
+              <span>15단계</span>
+              <span>20단계 (헤비)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-box">
+          <div class="chart-title">
+            <span>📊 업무 자동화 월 예상 요금 실시간 비교 그래프 (낮을수록 유리)</span>
+            <span class="savings-pill" id="savings-callout">💡 Zapier 대신 Make 선택 시 연간 약 $1,128 절약!</span>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">🟠 Zapier</div>
+            <div class="bar-track"><div class="bar-fill zapier" id="bar-zapier" style="width: 85%;"></div></div>
+            <div class="bar-price" id="bar-price-zapier" style="color: #f87171;">$103/월</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">🟣 Make.com</div>
+            <div class="bar-track"><div class="bar-fill make" id="bar-make" style="width: 12%;"></div></div>
+            <div class="bar-price" id="bar-price-make" style="color: #c084fc;">$9/월</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">🔴 n8n Cloud</div>
+            <div class="bar-track"><div class="bar-fill n8n" id="bar-n8n" style="width: 22%;"></div></div>
+            <div class="bar-price" id="bar-price-n8n" style="color: #fb7185;">€20/월 (~$20)</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">🟢 Lindy.ai</div>
+            <div class="bar-track"><div class="bar-fill lindy" id="bar-lindy" style="width: 30%;"></div></div>
+            <div class="bar-price" id="bar-price-lindy" style="color: #34d399;">$29.99/월</div>
+          </div>
+        </div>
+
+        <div class="sim-cards-grid">
+          <div class="sim-card warning-zapier">
+            <div>
+              <div class="sim-badge danger">⚠️ 비교 기준 (멀티스텝 과금 주의)</div>
+              <div class="sim-tool-name">Zapier</div>
+              <div class="sim-price-big" id="zapier-price-text" style="color: #f87171;">$103+ <span>/ 월 예상</span></div>
+              <div class="sim-usage-box">
+                예상 소모량: <strong id="zapier-tasks-used">9,000 Tasks / 월</strong><br />
+                <span style="color: var(--text-muted); font-size: 0.78rem;">(트리거 1개 제외 × <span id="zapier-action-count">9</span>개 액션 차감)</span>
+              </div>
+              <p class="sim-note" id="zapier-plan-note"></p>
+            </div>
+            <div class="dual-cta-row">
+              <a href="https://zapier.com/pricing" target="_blank" rel="noopener" class="btn-cta outline">공식 가격표</a>
+              <a href="#" data-affiliate="make" target="_blank" rel="noopener sponsored" class="btn-cta make">💡 가성비 대안 보기</a>
+            </div>
+          </div>
+
+          <div class="sim-card winner-make">
+            <div>
+              <div class="sim-badge make">🏆 가성비 승자 (중소규모 1위)</div>
+              <div class="sim-tool-name">Make.com</div>
+              <div class="sim-price-big" id="make-price-text" style="color: #c084fc;">$9 <span>/ 월 (Core)</span></div>
+              <div class="sim-usage-box">
+                예상 소모량: <strong id="make-credits-used">10,000 Credits / 월</strong><br />
+                <span style="color: var(--text-muted); font-size: 0.78rem;">(라우터·필터 무료 / 10,000 한도 커버)</span>
+              </div>
+              <p class="sim-note" id="make-plan-note"></p>
+            </div>
+            <a href="#" data-affiliate="make" target="_blank" rel="noopener sponsored" class="btn-cta make">
+              👉 Make $9 Core 플랜 시작하기
+            </a>
+          </div>
+
+          <div class="sim-card winner-n8n">
+            <div>
+              <div class="sim-badge n8n">⚡ 헤비유저 승자 (단계 수 무제한)</div>
+              <div class="sim-tool-name">n8n Cloud</div>
+              <div class="sim-price-big" id="n8n-price-text" style="color: #fb7185;">€20 <span>/ 월 (~$20)</span></div>
+              <div class="sim-usage-box">
+                예상 소모량: <strong id="n8n-exec-used">1,000 Executions / 월</strong><br />
+                <span style="color: var(--text-muted); font-size: 0.78rem;">(노드가 50개여도 전체 실행 1회당 1 차감)</span>
+              </div>
+              <p class="sim-note" id="n8n-plan-note"></p>
+            </div>
+            <a href="#" data-affiliate="n8n" target="_blank" rel="noopener sponsored" class="btn-cta n8n">
+              👉 n8n Cloud 트라이얼 시작
+            </a>
+          </div>
+
+          <div class="sim-card agent-lindy">
+            <div>
+              <div class="sim-badge lindy">🤖 자율 에이전트 & Relay 대안</div>
+              <div class="sim-tool-name">Lindy.ai</div>
+              <div class="sim-price-big" id="lindy-price-text" style="color: #34d399;">$29.99 <span>/ 월 (Plus)</span></div>
+              <div class="sim-usage-box">
+                과금 기준: <strong>3,000~15,000 AI Credits 풀</strong><br />
+                <span style="color: var(--text-muted); font-size: 0.78rem;">(자연어 명령 기반 자율 에이전트 위임)</span>
+              </div>
+              <p class="sim-note" id="lindy-plan-note"></p>
+            </div>
+            <a href="#" data-affiliate="lindy" target="_blank" rel="noopener sponsored" class="btn-cta lindy">
+              👉 Lindy.ai 7일 무료 체험
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simulator Panel B: AI Vibe Coding & Full-Stack Builders -->
+      <div class="simulator-wrapper" id="sim-panel-coding" style="display: none;">
+        <div class="preset-bar">
+          <div class="preset-buttons" id="coding-preset-buttons">
+            <button type="button" class="btn-preset" onclick="setCodingPreset(120, 2, this)">🌱 랜딩페이지 프로토타입 (월 120회 × 소형)</button>
+            <button type="button" class="btn-preset active" onclick="setCodingPreset(450, 5, this)">🔥 실전 SaaS MVP 빌드 (월 450회 × 중형 앱)</button>
+            <button type="button" class="btn-preset" onclick="setCodingPreset(1000, 8, this)">🚨 집중 디버깅 & 풀스택 개발 (월 1,000회 × 대형 앱)</button>
+          </div>
+        </div>
+
+        <div class="simulator-controls">
+          <div class="slider-box">
+            <div class="slider-label-row">
+              <label for="prompts-slider" class="slider-title">① 월간 AI 코드 생성·디버깅 요청 수 (Prompts)</label>
+              <span class="slider-value-badge" id="prompts-display">450회 / 월</span>
+            </div>
+            <input type="range" id="prompts-slider" min="50" max="1500" step="50" value="450" oninput="updateCodingSimulator()" />
+            <div class="slider-scale">
+              <span>50회</span>
+              <span>400회</span>
+              <span>750회</span>
+              <span>1,100회</span>
+              <span>1,500회</span>
+            </div>
+          </div>
+
+          <div class="slider-box">
+            <div class="slider-label-row">
+              <label for="context-slider" class="slider-title">② 프로젝트 파일 규모 & 디버깅 복잡도 (1~10)</label>
+              <span class="slider-value-badge" id="context-display">레벨 5 (중형 웹앱 • 파일 ~25개)</span>
+            </div>
+            <input type="range" id="context-slider" min="1" max="10" step="1" value="5" oninput="updateCodingSimulator()" />
+            <div class="slider-scale">
+              <span>1 (단일 페이지)</span>
+              <span>3 (소형)</span>
+              <span>5 (중형 SaaS)</span>
+              <span>8 (대형)</span>
+              <span>10 (풀스택 모놀리식)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-box">
+          <div class="chart-title">
+            <span>📊 AI 바이브 코딩 월 예상 비용 비교 (프로젝트가 커질수록 토큰 과금 주의!)</span>
+            <span class="savings-pill" id="coding-savings-callout">💡 대형 앱 디버깅 시 Cursor/Windsurf 고정 요금제가 월 $60+ 절약!</span>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">🔵 Cursor Pro</div>
+            <div class="bar-track"><div class="bar-fill cursor" id="bar-cursor" style="width: 22%;"></div></div>
+            <div class="bar-price" id="bar-price-cursor" style="color: #60a5fa;">$20/월</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">🩵 Windsurf</div>
+            <div class="bar-track"><div class="bar-fill windsurf" id="bar-windsurf" style="width: 18%;"></div></div>
+            <div class="bar-price" id="bar-price-windsurf" style="color: #22d3ee;">$15/월</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">💚 Lovable</div>
+            <div class="bar-track"><div class="bar-fill lindy" id="bar-lovable" style="width: 55%;"></div></div>
+            <div class="bar-price" id="bar-price-lovable" style="color: #34d399;">$50/월</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">🟠 Bolt.new</div>
+            <div class="bar-track"><div class="bar-fill zapier" id="bar-bolt" style="width: 80%;"></div></div>
+            <div class="bar-price" id="bar-price-bolt" style="color: #f87171;">$80/월</div>
+          </div>
+        </div>
+
+        <div class="sim-cards-grid">
+          <div class="sim-card winner-cursor">
+            <div>
+              <div class="sim-badge cursor">🏆 개발자 생산성 1위 (무제한 Slow 방어)</div>
+              <div class="sim-tool-name">Cursor</div>
+              <div class="sim-price-big" id="cursor-price-text" style="color: #60a5fa;">$20 <span>/ 월 (Pro 고정)</span></div>
+              <div class="sim-usage-box">
+                과금 구조: <strong id="cursor-usage-text">500 Fast + 무제한 Slow</strong><br />
+                <span style="color: var(--text-muted); font-size: 0.78rem;">(파일 크기 무관 / Fast 소진 후에도 무료 Slow 작동)</span>
+              </div>
+              <p class="sim-note" id="cursor-plan-note"></p>
+            </div>
+            <a href="#" data-affiliate="cursor" target="_blank" rel="noopener sponsored" class="btn-cta cursor">
+              👉 Cursor 공식 가격표 & 시작하기
+            </a>
+          </div>
+
+          <div class="sim-card winner-windsurf">
+            <div>
+              <div class="sim-badge windsurf">💎 가성비 AI IDE 대안 ($15/월)</div>
+              <div class="sim-tool-name">Windsurf</div>
+              <div class="sim-price-big" id="windsurf-price-text" style="color: #22d3ee;">$15 <span>/ 월 (Pro)</span></div>
+              <div class="sim-usage-box">
+                예상 소모: <strong id="windsurf-usage-text">Flow Action 크레딧</strong><br />
+                <span style="color: var(--text-muted); font-size: 0.78rem;">(Cascade 자율 컨텍스트 탐색 엔진 탑재)</span>
+              </div>
+              <p class="sim-note" id="windsurf-plan-note"></p>
+            </div>
+            <a href="#" data-affiliate="windsurf" target="_blank" rel="noopener sponsored" class="btn-cta windsurf">
+              👉 Windsurf Pro ($15/월) 시작하기
+            </a>
+          </div>
+
+          <div class="sim-card agent-lindy">
+            <div>
+              <div class="sim-badge lindy">🚀 비개발자 풀스택 웹앱 빌더 1위</div>
+              <div class="sim-tool-name">Lovable</div>
+              <div class="sim-price-big" id="lovable-price-text" style="color: #34d399;">$50 <span>/ 월 예상</span></div>
+              <div class="sim-usage-box">
+                예상 소모량: <strong id="lovable-usage-text">450 Message Credits</strong><br />
+                <span style="color: var(--text-muted); font-size: 0.78rem;">(Starter $20 = 월 100 메시지 / 디버깅 루프 주의)</span>
+              </div>
+              <p class="sim-note" id="lovable-plan-note"></p>
+            </div>
+            <a href="#" data-affiliate="lovable" target="_blank" rel="noopener sponsored" class="btn-cta lindy">
+              👉 Lovable 무료 체험 시작하기
+            </a>
+          </div>
+
+          <div class="sim-card warning-zapier">
+            <div>
+              <div class="sim-badge danger">⚠️ 대형 프로젝트 토큰 급증 주의</div>
+              <div class="sim-tool-name">Bolt.new</div>
+              <div class="sim-price-big" id="bolt-price-text" style="color: #f87171;">$80+ <span>/ 월 예상</span></div>
+              <div class="sim-usage-box">
+                예상 소모량: <strong id="bolt-usage-text">4,500만 Tokens / 월</strong><br />
+                <span style="color: var(--text-muted); font-size: 0.78rem;">(Pro $20 = 1,000만 토큰 / 전체 컨텍스트 재전송)</span>
+              </div>
+              <p class="sim-note" id="bolt-plan-note"></p>
+            </div>
+            <div class="dual-cta-row">
+              <a href="https://bolt.new" target="_blank" rel="noopener" class="btn-cta outline">공식 가격표</a>
+              <a href="#" data-affiliate="cursor" target="_blank" rel="noopener sponsored" class="btn-cta cursor">💡 가성비 대안 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       핵심 기능 2: 3대 카테고리 · 12개 대표 툴 종합 디렉토리
+  ====================================================================== -->
+  <section id="role-directory" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Feature 02 • 3 Categories & 12 Flagship Tools Directory</span>
+        <h2 class="section-title">🗂️ 3대 카테고리 · 12개 대표 툴 상세 스펙 & 치명적 단점 디렉토리</h2>
+        <p class="section-desc">
+          카테고리 탭, 직군별 필터, 실시간 키워드 검색을 조합해 내 비즈니스에 가장 알맞은 툴을 찾으세요. 모든 카드에 <strong>공식 가격표 확인</strong>과 <strong>가성비 대안</strong>을 투명하게 공개합니다.
+        </p>
+      </div>
+
+      <!-- ① Category Tabs + ② Role Filter + ③ Live Search Input -->
+      <div class="directory-controls-box">
+        <div class="filter-row">
+          <div class="filter-tabs" role="tablist" aria-label="카테고리 필터">
+            <button type="button" class="filter-tab active" onclick="setCategoryFilter('all', this)">
+              전체 12개 툴
+            </button>
+            <button type="button" class="filter-tab" onclick="setCategoryFilter('automation', this)">
+              ⚡ 업무 자동화 (4)
+            </button>
+            <button type="button" class="filter-tab" onclick="setCategoryFilter('vibe-coding', this)">
+              💻 AI 코딩/빌더 (4)
+            </button>
+            <button type="button" class="filter-tab" onclick="setCategoryFilter('ai-media', this)">
+              🎬 AI 영상/보이스 (4)
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="role-pills" role="group" aria-label="직군별 필터">
+            <span style="font-size: 0.82rem; font-weight: 800; color: var(--text-muted); margin-right: 4px;">직군 필터:</span>
+            <button type="button" class="role-pill active" onclick="setRoleFilter('all', this)">전체 직군</button>
+            <button type="button" class="role-pill" onclick="setRoleFilter('founder', this)">🚀 1인 창업가/대표</button>
+            <button type="button" class="role-pill" onclick="setRoleFilter('marketer', this)">📈 마케터/기획자</button>
+            <button type="button" class="role-pill" onclick="setRoleFilter('developer', this)">🧑‍💻 개발자/엔지니어</button>
+          </div>
+
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input
+              type="search"
+              id="tool-search-input"
+              class="search-input"
+              placeholder="툴 이름, 과금 단위(토큰, 크레딧), 키워드(더빙, 아바타, 루프) 검색..."
+              oninput="handleSearchInput(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic 12 Tools Container -->
+      <div class="tools-grid" id="tools-directory-grid"></div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       핵심 기능 3: 12대 툴 종합 비교표 & 아코디언 Q&A
+  ====================================================================== -->
+  <section id="deep-report" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Feature 03 • Research Lab Deep Report (2026.11)</span>
+        <h2 class="section-title">📊 AI Tech Radar Korea 리서치랩 심층 비교 리포트 & 필독 Q&A</h2>
+        <p class="section-desc">
+          2026년 11월 최신 공식 가격표 기준으로 정리한 <strong>3대 카테고리 과금 구조 요약표, Relay.app 서비스 종료 이주 가이드, 결제 전 필독 Q&A</strong>입니다.
+        </p>
+      </div>
+
+      <div class="report-tabs-nav">
+        <button type="button" class="report-tab-btn active" onclick="switchReportTab('tab-spec-table', this)">
+          📊 1. 3대 카테고리 · 12개 툴 핵심 과금 비교표
+        </button>
+        <button type="button" class="report-tab-btn" onclick="switchReportTab('tab-relay-guide', this)" id="relay-tab-trigger">
+          🚨 2. Relay.app 서비스 종료 긴급 이주 가이드
+        </button>
+        <button type="button" class="report-tab-btn" onclick="switchReportTab('tab-cons-accordion', this)">
+          ⚠️ 3. 결제 전 필독! 카테고리별 과금 함정 Q&A
+        </button>
+      </div>
+
+      <!-- Tab Panel 1: 12 Tools Master Comparison Table -->
+      <div class="report-panel active" id="tab-spec-table">
+        <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 10px;">
+          2026년 11월 기준 — 3대 카테고리 · 12개 대표 툴 과금 구조 한눈에 보기
+        </h3>
+        <div class="table-responsive">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>카테고리</th>
+                <th>툴 이름</th>
+                <th>주력 유료 시작가</th>
+                <th>핵심 과금 단위 & 무료 한도</th>
+                <th>실전 과금 함정 & 리서치랩 한줄 평</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="4"><strong>⚡ 업무 자동화</strong></td>
+                <td><strong>🟣 Make</strong></td>
+                <td>Core $9/월 (10,000 Cr)</td>
+                <td>모듈 작동당 1 Credit (라우터 무료)</td>
+                <td style="color: #c084fc; font-weight: 700;">1인 창업가·마케터 가성비 1위 (대량 루프 시에만 n8n 병행)</td>
+              </tr>
+              <tr>
+                <td><strong>🔴 n8n Cloud</strong></td>
+                <td>Starter €20/월 (2,500 Exec)</td>
+                <td>전체 실행 1회당 1 Execution (단계 무제한)</td>
+                <td style="color: #fb7185; font-weight: 700;">개발자·대량 루프 압도적 1위 (셀프호스팅 시급 낭비 주의)</td>
+              </tr>
+              <tr>
+                <td><strong>🟠 Zapier</strong></td>
+                <td>Pro $19.99/월 (750 Tasks)</td>
+                <td>액션당 1 Task (무료는 2-step 제한)</td>
+                <td style="color: #f87171;">멀티스텝 확장 시 월 $100+ 요금 급증 주의 (비교 기준)</td>
+              </tr>
+              <tr>
+                <td><strong>🟢 Lindy.ai</strong></td>
+                <td>Plus $29.99/월 (3,000 Cr)</td>
+                <td>작업 복잡도별 AI Credit (7일 무료 체험)</td>
+                <td style="color: #34d399; font-weight: 700;">자연어 자율형 AI 비서 & Relay.app 서비스 종료 대안 1위</td>
+              </tr>
+              <tr>
+                <td rowspan="4"><strong>💻 AI 바이브 코딩</strong></td>
+                <td><strong>🔵 Cursor</strong></td>
+                <td>Pro $20/월 (연간 $16)</td>
+                <td>500 Fast Requests + 무제한 Slow 풀</td>
+                <td style="color: #60a5fa; font-weight: 700;">개발자 생산성 1위 (Max 모드·종량제 한도 설정만 주의)</td>
+              </tr>
+              <tr>
+                <td><strong>🩵 Windsurf</strong></td>
+                <td>Pro $15/월</td>
+                <td>Prompt & Flow Action 크레딧 과금</td>
+                <td style="color: #22d3ee; font-weight: 700;">Cascade 에이전트 탑재 가성비 AI IDE 대안 ($15/월)</td>
+              </tr>
+              <tr>
+                <td><strong>💚 Lovable</strong></td>
+                <td>Starter $20/월 (100 Msg)</td>
+                <td>요청당 1 Message Credit (일 5회 무료)</td>
+                <td style="color: #34d399; font-weight: 700;">비개발자 풀스택 웹앱 빌더 1위 (디버깅 루프 시 크레딧 소모 주의)</td>
+              </tr>
+              <tr>
+                <td><strong>🟠 Bolt.new</strong></td>
+                <td>Pro $20/월 (1,000만 토큰)</td>
+                <td>입출력 Tokens (전체 파일 컨텍스트 전송)</td>
+                <td style="color: #f87171;">프로젝트가 커지면 전체 컨텍스트 재전송으로 토큰 급증 주의</td>
+              </tr>
+              <tr>
+                <td rowspan="4"><strong>🎬 AI 영상/보이스</strong></td>
+                <td><strong>🩷 ElevenLabs</strong></td>
+                <td>Starter $5/월 · Creator $22/월</td>
+                <td>변환 글자 수(Character) 크레딧 과금</td>
+                <td style="color: #f472b6; font-weight: 700;">다국어 AI 성우·더빙 품질 1위 (짧은 문장 단위 생성 권장)</td>
+              </tr>
+              <tr>
+                <td><strong>💜 HeyGen</strong></td>
+                <td>Creator $29/월 (연간 $24)</td>
+                <td>영상 길이 및 프리미엄 아바타 크레딧</td>
+                <td style="color: #a78bfa; font-weight: 700;">마케팅 AI 아바타 & 다국어 립싱크 번역 1위</td>
+              </tr>
+              <tr>
+                <td><strong>🎬 Runway</strong></td>
+                <td>Standard $12/월 (625 Cr)</td>
+                <td>Gen-3 영상 초당 생성 크레딧 (5~10 Cr/초)</td>
+                <td style="color: #f87171;">실패 컷(재촬영)에도 크레딧 차감 주의 (Image-to-Video 필수)</td>
+              </tr>
+              <tr>
+                <td><strong>🩵 Kling AI</strong></td>
+                <td>Standard ~$10/월 (660 Cr)</td>
+                <td>모션 생성 크레딧 (일일 무료 크레딧 제공)</td>
+                <td style="color: #2dd4bf; font-weight: 700;">물리 모션 일관성이 뛰어난 고가성비 AI 영상 생성 대안</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab Panel 2: Relay.app Shutdown Migration Guide -->
+      <div class="report-panel" id="tab-relay-guide">
+        <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 12px; padding: 18px; margin-bottom: 22px;">
+          <h3 style="color: #f87171; font-size: 1.2rem; margin-bottom: 6px;">
+            🚨 Relay.app 서비스 종료(2026년 8~9월) 유저를 위한 직군별 이주 가이드
+          </h3>
+          <p style="font-size: 0.91rem; color: var(--text-secondary);">
+            Relay.app이 공식 서비스를 종료함에 따라, 기존 워크플로우의 성격에 맞춰 아래 3가지 검증된 대안 중 하나로 이전하시기 바랍니다.
+          </p>
+        </div>
+
+        <div class="tldr-grid">
+          <div class="tldr-card lindy-card">
+            <div>
+              <div class="tldr-role" style="color: #34d399;">경로 1 • AI 비서 & 이메일/미팅 자동화</div>
+              <h3>Lindy.ai ($29.99/월)</h3>
+              <p>Relay.app의 이메일 초안 작성, 미팅 브리핑, CRM 자동 업데이트 등 AI 에이전트 위주 사용자에게 가장 매끄러운 1순위 대체재입니다.</p>
+            </div>
+            <a href="#" data-affiliate="lindy" target="_blank" rel="noopener sponsored" class="btn-cta lindy">👉 Lindy.ai 7일 무료 체험하기</a>
+          </div>
+
+          <div class="tldr-card make-card">
+            <div>
+              <div class="tldr-role" style="color: #c084fc;">경로 2 • 가성비 멀티스텝 & 3,500+ 앱 연동</div>
+              <h3>Make (Core $9/월)</h3>
+              <p>정교한 조건 분기(Router)와 다양한 서드파티 SaaS 멀티스텝 연동을 월 $9(10,000 Credits)로 가장 경제하게 구현합니다.</p>
+            </div>
+            <a href="#" data-affiliate="make" target="_blank" rel="noopener sponsored" class="btn-cta make">👉 Make Core($9/월) 시작하기</a>
+          </div>
+
+          <div class="tldr-card n8n-card">
+            <div>
+              <div class="tldr-role" style="color: #fb7185;">경로 3 • 웹훅/API & LangChain 에이전트</div>
+              <h3>n8n Cloud (€20/월)</h3>
+              <p>커스텀 코드(JS/Python)와 단계 수 과금 걱정 없는 대형 AI 파이프라인이 필요한 개발팀에게 최적의 정착지입니다.</p>
+            </div>
+            <a href="#" data-affiliate="n8n" target="_blank" rel="noopener sponsored" class="btn-cta n8n">👉 n8n Cloud 트라이얼 시작</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Panel 3: Clean Class-Based Accordion Q&A -->
+      <div class="report-panel" id="tab-cons-accordion">
+        <h3 style="font-size: 1.22rem; font-weight: 800; margin-bottom: 14px;">
+          ⚠️ 결제 전 반드시 확인해야 할 카테고리별 과금 함정 & 해결책 Q&A
+        </h3>
+
+        <div class="accordion-item open">
+          <button type="button" class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Q1. [업무 자동화] Make($9)와 n8n Cloud(€20) 중 내 워크플로우에는 무엇이 더 저렴한가요?</span>
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <p style="margin-bottom: 10px;">
+              • <strong>10단계 이하 중소규모 자동화:</strong> 월 $9에 10,000 Credits를 제공하는 <strong>Make Core 플랜</strong>이 가장 저렴하고 시각적으로 배우기 쉽습니다.<br />
+              • <strong>15단계 이상 헤비 워크플로우 및 수천 행 데이터 반복(Loop):</strong> Make는 모듈 작동 횟수마다 크레딧이 차감되지만, <strong>n8n Cloud(€20/월)</strong>는 노드가 100개여도 전체 실행 1회당 단 1 Execution만 차감되므로 대량 루프 작업에서 압도적으로 유리합니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Q2. [AI 바이브 코딩] Bolt.new와 Lovable에서 '디버깅 루프 과금 폭탄'을 피하는 실전 팁은?</span>
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <p style="margin-bottom: 10px;">
+              • <strong>Bolt.new 토큰 급증 원리:</strong> 프로젝트 파일이 많아지면 사소한 버그 수정 요청에도 전체 코드 컨텍스트를 재전송하여 1,000만 토큰(Pro $20)이 며칠 만에 소진될 수 있습니다.<br />
+              • <strong>하이브리드 비용 절감 공식:</strong> 초기 UI와 Supabase DB 뼈대는 <strong>Lovable($20/월, 메시지당 1차감)</strong>로 빠르게 생성한 뒤, GitHub 동기화를 통해 코드를 로컬로 가져와 <strong>Cursor($20/월, 500 Fast + 무제한 Slow)</strong> 또는 <strong>Windsurf($15/월)</strong>에서 세부 디버깅을 진행하면 추가 과금을 100% 방어할 수 있습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Q3. [AI 영상/보이스] Runway, Kling AI, ElevenLabs에서 버려지는 크레딧을 줄이려면?</span>
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <p style="margin-bottom: 10px;">
+              • <strong>AI 영상(Runway · Kling AI):</strong> 텍스트 프롬프트만으로 바로 영상을 생성(Text-to-Video)하면 구도가 마음에 들지 않아 4~5번 재촬영하며 크레딧을 낭비하게 됩니다. 반드시 이미지 생성 툴로 첫 프레임 이미지를 먼저 확정한 뒤 <strong>Image-to-Video</strong>로 모션만 부여하세요.<br />
+              • <strong>AI 성우(ElevenLabs):</strong> 긴 대본 전체를 한 번에 변환하지 말고, <strong>1~2문장 단위로 끊어서 생성</strong>해야 특정 단어의 억양만 수정할 때 글자 수 크레딧 손실을 최소화할 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       핵심 기능 4: 뉴스레터 구독 API 연동 + 마스터 리포트 즉시 다운로드
+  ====================================================================== -->
+  <section id="newsletter-section" class="section">
+    <div class="container">
+      <div class="newsletter-box">
+        <span class="section-tag">Instant Master Report & Weekly Price Intelligence</span>
+        <h2 class="section-title" style="margin-top: 6px;">
+          📥 《2026 AI & 노코드 12대 툴 실전 과금 비교 마스터 리포트》 즉시 받기
+        </h2>
+        <p class="section-desc" style="max-width: 700px; margin: 0 auto;">
+          직군을 선택하고 이메일을 입력하시면 AI Tech Radar Korea 리서치랩이 검증한 <strong>12대 툴 과금 공식·단점·예산 절감 레시피 마스터 리포트(.md / 인쇄용 .html)</strong>가 1초의 기다림 없이 브라우저에서 즉시 다운로드됩니다.
+        </p>
+
+        <form class="newsletter-form" id="subscribe-form" onsubmit="handleNewsletterSubmit(event)">
+          <select id="newsletter-role" class="newsletter-select" aria-label="직군 선택">
+            <option value="1인 창업가/대표">🚀 1인 창업가 / 대표</option>
+            <option value="마케터/기획자">📈 마케터 / 기획자</option>
+            <option value="개발자/엔지니어">🧑‍💻 개발자 / 엔지니어</option>
+          </select>
+          <input
+            type="email"
+            id="newsletter-email"
+            class="newsletter-input"
+            placeholder="실무 이메일 주소 입력 (예: founder@company.kr)"
+            required
+          />
+          <button type="submit" class="btn-subscribe" id="subscribe-submit-btn">
+            무료 구독 & 리포트 즉시 다운로드 →
+          </button>
+        </form>
+
+        <p id="newsletter-feedback" style="font-size: 0.88rem; color: #34d399; font-weight: 700; min-height: 22px;"></p>
+
+        <!-- Instant Download Box (Activated immediately on submit + one-click re-download) -->
+        <div class="instant-download-panel" id="instant-download-panel">
+          <div style="font-weight: 800; color: #34d399; font-size: 0.96rem; margin-bottom: 4px;">
+            ✅ 구독 등록 및 마스터 리포트 자동 다운로드가 시작되었습니다!
+          </div>
+          <p style="font-size: 0.84rem; color: var(--text-secondary);">
+            브라우저에서 자동 다운로드가 차단되었거나 인쇄용 요약본이 추가로 필요하시다면 아래 버튼을 클릭해 즉시 저장하세요.
+          </p>
+          <div class="download-btn-row">
+            <button type="button" class="btn-cta lindy" style="width: auto; padding: 10px 16px;" onclick="downloadMasterReport('md')">
+              📄 마스터 리포트 원본 다운로드 (.md)
+            </button>
+            <button type="button" class="btn-cta cursor" style="width: auto; padding: 10px 16px;" onclick="downloadMasterReport('html')">
+              🖨️ 인쇄/PDF 저장용 요약본 다운로드 (.html)
+            </button>
+          </div>
+        </div>
+
+        <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 8px;">
+          🔒 AI Tech Radar Korea 리서치랩 공식 뉴스레터 • 스팸 제로 원칙 • 언제든 원클릭 수신 거부 가능
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p style="font-weight: 800; color: var(--text-secondary); margin-bottom: 8px;">
+        © 2026 AI Tech Radar Korea Research Lab. All rights reserved.
+      </p>
+      <p style="max-width: 800px; margin: 0 auto 12px;">
+        투명성 고지(Editorial & Partner Disclosure): 본 디렉토리의 모든 과금 데이터는 <strong>AI Tech Radar Korea 리서치랩 공식 과금 검증 (2026년 11월 최신 공식 가격표 기준)</strong>으로 작성되었습니다. 사이트 내 일부 추천 링크를 통해 서비스 가입 시 독자에게는 추가 비용이 발생하지 않으며, 리서치랩은 소정의 파트너십 수수료를 제공받아 무료 과금 계산기 및 독립 리서치 운영에 사용합니다.
+      </p>
+      <p id="build-metadata-footer" style="font-size: 0.78rem; color: var(--text-muted);">
+        AI Tech Radar Korea 리서치랩 공식 과금 검증 • 2026년 11월 최신 공식 가격표 기준
+      </p>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       EMBEDDED DIRECTORY DATABASE
+  ====================================================================== -->
+  <script>
+    /* __BUILD_META_START__ */
+    const BUILD_META = {"edition":"2026년 11월 최신 공식 가격표 기준","verified_by":"AI Tech Radar Korea 리서치랩 공식 과금 검증","last_built_at":"2026-11-02T14:14:47+09:00","tool_count":12,"category_count":3};
+    /* __BUILD_META_END__ */
+
+    /* __TOOLS_DB_START__ */
+    const TOOLS_DB = [{"id":"make","name":"Make (구 Integromat)","slug":"make","official_url":"https://www.make.com","pricing_url":"https://www.make.com/en/pricing","category_group":"automation","category_label":"⚡ 업무 자동화 & AI 에이전트","category":"Visual No-Code Workflow Automation","role_tags":["founder","marketer"],"badge_label":"창업가·마케터 1위","is_anchor":false,"best_for":"1인 창업가, 퍼포먼스·콘텐츠 마케터, 시각적 순서도(Flowchart) 기반 중소규모 멀티스텝 자동화","billing_unit":{"name":"Credits (구 Operations)","calculation_rule":"시나리오 내 모듈(노드)이 1회 작동할 때마다 1 Credit 차감 (라우터·필터는 무료, 무거운 AI 모듈은 차등 차감)","simulation_10step_1000runs":"월 10,000 Credits 소모 → Core($9/월) 기본 제공량 안에서 100% 커버 가능"},"pricing_tiers":[{"tier":"Free","price_annual":"$0/월","price_monthly":"$0/월","quota":"1,000 Credits/월","key_features":["활성 시나리오 최대 2개","최소 실행 주기 15분","3,500+ 앱 연동"]},{"tier":"Core","price_annual":"$9/월","price_monthly":"~$10.59/월","quota":"10,000 Credits/월","key_features":["무제한 활성 시나리오","최소 1분 주기 실행","Make API 접근"]},{"tier":"Pro","price_annual":"$16/월","price_monthly":"~$18.82/월","quota":"10,000 Credits/월 (확장 가능)","key_features":["우선 실행(Priority execution)","커스텀 변수 지원","전문 실행 로그 검색"]},{"tier":"Teams","price_annual":"$29/월","price_monthly":"~$34.12/월","quota":"10,000 Credits/월 (확장 가능)","key_features":["팀 권한 관리","시나리오 템플릿 공유"]}],"pros":["월 $9에 10,000 Credits를 제공하여 Zapier 대비 멀티스텝 자동화 비용을 80% 이상 절감","직관적인 2D 시각적 순서도 UI로 복잡한 조건 분기(Router) 설계가 용이함","라우터 및 필터 단계에 크레딧이 차감되지 않음","3,500개 이상의 방대한 서드파티 SaaS 및 AI 모듈 즉시 연동 지원"],"cons":["초보자의 경우 JSON·배열(Iterator, Aggregator) 처리 방식에 1~2시간의 초기 학습 곡선이 존재함","수천 건의 데이터 행을 반복(Loop) 처리할 때는 모듈 실행 횟수만큼 크레딧이 소모되어 n8n 대비 불리함"],"relay_migration_fit":"Relay.app에서 합리적인 가격으로 다양한 서드파티 SaaS 멀티스텝 연동을 사용하던 마케터 및 창업가에게 최적의 대안","alternative_tip":{"target_id":"n8n","target_name":"n8n Cloud","label":"💡 대량 데이터 루프(Loop)가 많다면? 단계 수 무제한 n8n Cloud(€20/월) 보기 →"},"main_cta_label":"👉 Make 무료 체험 & Core($9/월) 시작하기","btn_theme":"make"},{"id":"n8n","name":"n8n Cloud (& Self-hosted)","slug":"n8n","official_url":"https://n8n.io","pricing_url":"https://n8n.io/pricing/","category_group":"automation","category_label":"⚡ 업무 자동화 & AI 에이전트","category":"Developer-First & AI Agent Workflow Automation","role_tags":["developer","founder"],"badge_label":"개발자·AI 빌더 1위","is_anchor":false,"best_for":"풀스택 개발자, AI 에이전트 빌더, 대량 데이터 루프(Loop) 및 15단계 이상 헤비 워크플로우 운영자","billing_unit":{"name":"Workflow Executions (전체 실행 횟수)","calculation_rule":"워크플로우 안에 노드가 5개든 100개든 전체 워크플로우가 1회 끝까지 실행될 때 단 1 Execution 차감","simulation_10step_1000runs":"월 1,000 Executions 소모 → Cloud Starter(€20/월) 기본 한도 2,500회의 40%만 소모"},"pricing_tiers":[{"tier":"Self-hosted (Community)","price_annual":"$0 (오픈소스)","price_monthly":"$0 (서버 자부담)","quota":"무제한 실행 (자체 VPS 호스팅 필요)","key_features":["Docker/VPS 구축 시 무료","서버 보안·업데이트·장애 복구 직접 관리 필요"]},{"tier":"Cloud Starter","price_annual":"€20/월 (~$20)","price_monthly":"€24/월 (~$24)","quota":"2,500 Executions/월 (단계 수 무제한)","key_features":["무제한 활성 워크플로우 및 유저","동시 실행 5개","관리형 클라우드 인프라"]},{"tier":"Cloud Pro","price_annual":"€50/월 (~$50)","price_monthly":"€60/월 (~$60)","quota":"10,000 Executions/월","key_features":["동시 실행 최대 20~50개","공유 프로젝트 3개","워크플로우 히스토리 및 30일 인사이트"]}],"pros":["노드 개수와 무관하게 전체 실행 1회당 과금되므로 대량 루프와 50단계 이상의 대형 파이프라인에서 가성비 압도적 1위","LangChain 기반 AI 에이전트, 벡터 DB, 메모리 노드를 기본 내장하여 AI 빌더에게 최적화됨","JavaScript 및 Python 코드 노드를 자유롭게 작성 가능","Cloud Starter(월 €20) 이용 시 서버 관리·업데이트·보안 세팅에 드는 개발자 시급을 완벽히 절약 가능"],"cons":["비개발자 직군에게는 JSON 데이터 다루기와 기술적 UI의 진입장벽이 다소 높음","무료 셀프호스팅 선택 시 Docker/VPS 구축, SSL 보안, 버전 업데이트 장애 복구를 직접 감당해야 함"],"relay_migration_fit":"Relay.app에서 AI 워크플로우와 웹훅/API 중심의 고도화된 자동화를 구축하던 개발자 및 테크 팀에게 최적의 대안","alternative_tip":{"target_id":"make","target_name":"Make","label":"💡 비개발자 친화적인 시각적 UI가 필요하다면? Make Core($9/월) 보기 →"},"main_cta_label":"👉 n8n Cloud Starter 무료 트라이얼 시작하기","btn_theme":"n8n"},{"id":"zapier","name":"Zapier","slug":"zapier","official_url":"https://zapier.com","pricing_url":"https://zapier.com/pricing","category_group":"automation","category_label":"⚡ 업무 자동화 & AI 에이전트","category":"Beginner-Friendly SaaS Integration","role_tags":["marketer","founder"],"badge_label":"비교 기준 (멀티스텝 고비용 주의)","is_anchor":true,"best_for":"개발 지식이 전혀 없고 7,000개 이상의 마이너 서드파티 앱을 2~3단계로 즉시 연결해야 하는 입문자","billing_unit":{"name":"Tasks (액션 실행 수)","calculation_rule":"트리거(Trigger)와 필터는 무료이나, 실제 Action 단계가 성공할 때마다 1 Task 차감","simulation_10step_1000runs":"월 9,000 Tasks 소모 (트리거 제외 9개 액션 × 1,000회 → 월 $103+ 고가 요금제 구간 진입)"},"pricing_tiers":[{"tier":"Free","price_annual":"$0/월","price_monthly":"$0/월","quota":"100 Tasks/월","key_features":["무제한 Zaps 제공","단, 2-step Zaps(트리거 1 + 액션 1)로만 엄격 제한","폴링 주기 15분"]},{"tier":"Professional","price_annual":"$19.99/월","price_monthly":"$29.99/월","quota":"750 Tasks/월부터 시작","key_features":["멀티스텝(Multi-step) Zaps 허용","프리미엄 앱 무제한","Webhooks, Filters, Paths 지원"]},{"tier":"Team","price_annual":"$69/월","price_monthly":"$103.50/월","quota":"2,000 Tasks/월부터 시작","key_features":["최대 25명 이상 협업","공유 워크스페이스 및 앱 연결","SAML SSO 지원"]}],"pros":["업계 최다인 7,000개 이상의 서드파티 SaaS 연동 지원","학습 곡선이 거의 없어 비개발자도 5분 만에 단순 연동 완성 가능"],"cons":["무료 플랜에서 3단계 이상 멀티스텝 구성이 전면 차단됨 (2-step 제한)","유료 플랜($19.99~$29.99/월) 기본 제공량이 750 Tasks에 불과해 멀티스텝 자동화 시 비용이 기하급수적으로 상승함"],"relay_migration_fit":"단순 2~3단계 연동에는 쓸 만하나, Relay.app 유저가 기대하는 AI 에이전트 가성비 측면에서는 Make나 Lindy.ai보다 비용 부담이 큼","alternative_tip":{"target_id":"make","target_name":"Make","label":"💡 멀티스텝 요금 절감: 똑같은 10단계 자동화를 Make($9/월)로 80% 저렴하게 전환하기 →"},"main_cta_label":"💡 가성비 대안 보기 (Make $9/월)","btn_theme":"make"},{"id":"lindy","name":"Lindy.ai","slug":"lindy-ai","official_url":"https://www.lindy.ai","pricing_url":"https://www.lindy.ai/pricing","category_group":"automation","category_label":"⚡ 업무 자동화 & AI 에이전트","category":"No-Code Autonomous AI Agent Platform","role_tags":["founder","marketer"],"badge_label":"AI 비서 & Relay 대안 1위","is_anchor":false,"best_for":"노드 연결조차 번거로워 자연어 명령만으로 이메일 분류·일정 조율·회의록·리드 발굴을 위임하려는 1인 창업가 및 구 Relay.app 유저","billing_unit":{"name":"Credits (AI 에이전트 크레딧)","calculation_rule":"작업 복잡도에 따라 유동 차감 (단순 요약·답장 2~250 크레딧, 심층 리서치·티켓 처리 250~1,000 크레딧)","simulation_10step_1000runs":"Plus($29.99/월, 3,000 Cr) 또는 Pro($99.99/월, 15,000 Cr) 워크스페이스 풀에서 유동 차감"},"pricing_tiers":[{"tier":"Free Trial","price_annual":"7일 무료 체험","price_monthly":"7일 무료 체험 (영구 무료 폐지)","quota":"체험 크레딧 제공","key_features":["결제 전 실제 워크플로우 크레딧 소모량 사전 검증 가능"]},{"tier":"Plus","price_annual":"$29.99/월","price_monthly":"$29.99/월","quota":"3,000 Credits/월 (미사용분 이월 불가)","key_features":["Computer Use, AI 모델 선택, MCP 연동","최대 5개 인박스 연결","워크스페이스 내 크레딧 공유"]},{"tier":"Pro","price_annual":"$99.99/월","price_monthly":"$99.99/월","quota":"15,000 Credits/월","key_features":["일상적인 비즈니스 업무 전면 위임 및 헤비 오토메이션 유저용"]}],"pros":["복잡한 순서도나 코딩 없이 자연어 프롬프트만으로 자율형 AI 직원(에이전트) 생성 가능","Computer Use 및 MCP 연동 등 최신 에이전트 기능을 Plus($29.99/월) 플랜부터 동일하게 제공","서비스 종료된 Relay.app의 AI 비서 및 휴먼 워크플로우 경험을 가장 매끄럽게 대체"],"cons":["영구 무료 플랜이 폐지되어 7일 무료 체험 후 유료 전환이 필요함","월간 미사용 잔여 크레딧이 다음 달로 이월(Rollover)되지 않으며 무거운 작업 시 크레딧 소모 폭이 큼"],"relay_migration_fit":"Relay.app의 2026년 8~9월 서비스 종료 이후, 노코드 AI 에이전트 및 이메일/미팅/CRM 자동화를 쓰던 유저들이 가장 먼저 이동해야 할 1순위 대체재","alternative_tip":{"target_id":"make","target_name":"Make","label":"💡 정형화된 규칙 기반 연동으로 비용을 낮추려면? Make Core($9/월) 병행하기 →"},"main_cta_label":"👉 Lindy.ai 7일 무료 체험 시작하기","btn_theme":"lindy"},{"id":"cursor","name":"Cursor","slug":"cursor","official_url":"https://www.cursor.com","pricing_url":"https://www.cursor.com/pricing","category_group":"vibe-coding","category_label":"💻 AI 바이브 코딩 & 풀스택 빌더","category":"AI-Native Code Editor (IDE)","role_tags":["developer","founder"],"badge_label":"개발자 생산성 1위","is_anchor":false,"best_for":"실무 풀스택 개발자, 기술 창업가, 대규모 코드베이스 리팩토링 및 정밀한 에이전트 코딩이 필요한 빌더","billing_unit":{"name":"Fast Requests + 무제한 Slow Pool","calculation_rule":"Pro $20/월 가입 시 월 500회 프리미엄 Fast Request 제공, 소진 후에도 추가 과금 없이 무제한 Slow Request 사용 가능 (단, Max 모드·종량제 ON 시 별도 과금)","simulation_10step_1000runs":"월 500~1,000회 코딩 작업 시 Pro $20/월 고정 요금으로 안정적 방어 (종량제 한도 설정 시 과금 폭탄 0원)"},"pricing_tiers":[{"tier":"Hobby (Free)","price_annual":"$0/월","price_monthly":"$0/월","quota":"2주 Pro 트라이얼 / 제한된 요청","key_features":["기본 코드 자동완성 및 에이전트 체험","소규모 테스트용"]},{"tier":"Pro","price_annual":"$16/월","price_monthly":"$20/월","quota":"500 Fast Requests/월 + 무제한 Slow","key_features":["Claude Sonnet / GPT-4o / Gemini 프리미엄 모델","멀티파일 Composer 에이전트","무제한 Tab 자동완성"]},{"tier":"Business","price_annual":"$32/유저/월","price_monthly":"$40/유저/월","quota":"팀 중앙 과금 + 프라이버시 강제 적용","key_features":["조직 단위 데이터 학습 배제(Zero Data Retention)","관리자 대시보드 및 SSO"]}],"pros":["월 500회 Fast Request를 다 써도 무제한 Slow Request 풀이 작동하여 월 $20 고정비로 예측 가능한 코딩 가능","VS Code 완벽 호환으로 기존 확장 프로그램과 단축키를 1초 만에 그대로 이전 가능","전체 리포지토리 인덱싱(@Codebase) 정확도와 멀티파일 동시 수정(Composer) 완성도가 업계 최고 수준"],"cons":["대시보드에서 'Usage-based pricing(종량제 추가 과금)'과 'Max Mode'를 켜둔 채 대형 컨텍스트 작업을 반복하면 월 $50~$100+ 추가 요금이 청구될 수 있음","비개발자가 코드 한 줄 모르고 배포까지 원클릭으로 끝내기에는 터미널·Git 기초 지식이 필요함"],"relay_migration_fit":"직접 사내 어드민이나 마이크로 SaaS를 바이브 코딩으로 구축해 고정 SaaS 구독료를 아끼려는 창업가·개발자의 필수 도구","alternative_tip":{"target_id":"windsurf","target_name":"Windsurf","label":"💡 월 구독료를 $15로 더 낮추고 싶다면? 가성비 AI IDE Windsurf($15/월) 비교하기 →"},"main_cta_label":"👉 Cursor 공식 가격표 & 무료 다운로드","btn_theme":"cursor"},{"id":"windsurf","name":"Windsurf (by Codeium)","slug":"windsurf","official_url":"https://codeium.com/windsurf","pricing_url":"https://codeium.com/windsurf","category_group":"vibe-coding","category_label":"💻 AI 바이브 코딩 & 풀스택 빌더","category":"Agentic AI IDE (Cascade Engine)","role_tags":["developer","founder"],"badge_label":"가성비 AI IDE 대안","is_anchor":false,"best_for":"Cursor($20/월)보다 저렴한 $15/월에 자율 컨텍스트 파악(Cascade) 에이전트 코딩을 원하는 실속파 개발자 및 빌더","billing_unit":{"name":"Prompt & Flow Action Credits","calculation_rule":"사용자 프롬프트 및 AI가 터미널 실행·파일 수정을 자율 수행하는 Flow Action 단위로 크레딧 차감","simulation_10step_1000runs":"Pro $15/월로 중소규모 개발 프로젝트를 합리적으로 커버 (Cursor 대비 기본 구독료 25% 절감)"},"pricing_tiers":[{"tier":"Free","price_annual":"$0/월","price_monthly":"$0/월","quota":"무제한 기본 자동완성 + 체험용 크레딧","key_features":["Cascade 에이전트 무료 체험","빠른 인라인 코드 자동완성"]},{"tier":"Pro","price_annual":"$15/월","price_monthly":"$15/월","quota":"500 Prompt Credits + 1,500 Flow Action Credits","key_features":["Cascade 심층 컨텍스트 에이전트","프리미엄 LLM 모델 지원","이미지-투-코드 변환"]},{"tier":"Pro Ultimate","price_annual":"$60/월","price_monthly":"$60/월","quota":"무제한 User Prompt + 3,000 Flow Action Credits","key_features":["대규모 프로젝트 풀타임 바이브 코더용"]}],"pros":["월 $15라는 경쟁력 있는 가격으로 Cursor Pro($20/월) 대비 초기 고정비 부담이 낮음","Cascade 엔진이 개발자가 일일이 파일을 지정(@file)하지 않아도 관련 파일 컨텍스트를 스스로 찾아내어 수정함","깔끔하고 모던한 UI로 바이브 코딩 입문 개발자에게 쾌적한 경험 제공"],"cons":["AI가 스스로 파일을 탐색·수정·터미널 실행을 반복할 때 'Flow Action 크레딧'이 예상보다 빠르게 소진될 수 있음","크레딧 소진 후 추가 충전(Flex Credits) 반복 시 결국 상위 요금제($60/월)나 Cursor($20/월)보다 비싸질 수 있어 잔여량 관리가 필요함"],"relay_migration_fit":"합리적인 월 구독료로 사내 자동화 스크립트 및 웹서비스를 빠르게 제작하려는 개발자·창업가에게 추천","alternative_tip":{"target_id":"cursor","target_name":"Cursor","label":"💡 크레딧 소진 후에도 무제한 Slow 풀이 보장되는 에디터를 원한다면? Cursor($20/월) 보기 →"},"main_cta_label":"👉 Windsurf 무료 체험 & Pro($15/월) 시작하기","btn_theme":"windsurf"},{"id":"lovable","name":"Lovable","slug":"lovable","official_url":"https://lovable.dev","pricing_url":"https://lovable.dev/pricing","category_group":"vibe-coding","category_label":"💻 AI 바이브 코딩 & 풀스택 빌더","category":"No-Code Full-Stack AI Web App Builder","role_tags":["founder","marketer"],"badge_label":"비개발자 풀스택 빌더 1위","is_anchor":false,"best_for":"코딩을 전혀 모르는 1인 창업가·기획자·마케터가 프롬프트만으로 디자인+Supabase DB+인증+배포까지 원클릭 완성할 때","billing_unit":{"name":"Message Credits (월간 메시지 횟수)","calculation_rule":"코드 생성·수정·버그 픽스 요청 메시지 1회당 1 Credit 차감 (파일 크기와 무관하게 1회당 고정 1차감)","simulation_10step_1000runs":"Starter $20/월 기준 월 100 메시지 제공 — 단, 에러 디버깅 루프 발생 시 100회가 빠르게 소진되어 $50~$100+ 구간 진입 주의"},"pricing_tiers":[{"tier":"Free","price_annual":"$0/월","price_monthly":"$0/월","quota":"일 5회 메시지 (월 최대 30~50회 제한)","key_features":["퍼블릭 프로젝트 생성","원클릭 웹 배포 및 Supabase 연동 테스트"]},{"tier":"Starter","price_annual":"$20/월","price_monthly":"$20/월","quota":"월 100 Message Credits (+ 일일 무료 보너스)","key_features":["프라이빗 프로젝트 허용","커스텀 도메인 연결","GitHub 양방향 동기화"]},{"tier":"Launch / Scale","price_annual":"$50~$100+/월","price_monthly":"$50~$100+/월","quota":"월 250 ~ 500+ Message Credits","key_features":["본격적인 MVP 빌드 및 잦은 UI/DB 수정 시 필수 구간"]}],"pros":["비개발자도 환경 세팅 없이 프롬프트 몇 줄로 감각적인 UI와 Supabase 백엔드(로그인·DB)가 연결된 실동작 웹앱을 10분 만에 구축 가능","Bolt.new와 달리 프로젝트 파일이 커져도 '메시지 1회 = 1 크레딧'으로 명확하게 차감되어 토큰 폭탄 위험이 덜함","GitHub 양방향 동기화를 지원하여 추후 Cursor나 Windsurf로 코드를 내려받아 이어서 개발하기 완벽함"],"cons":["Starter($20/월)의 기본 제공량이 월 100 메시지에 불과해, 복잡한 기능 구현 중 '디버깅 루프(에러 수정 반복)'에 빠지면 하루이틀 만에 크레딧이 바닥남","세밀한 비즈니스 로직 수정 시 결국 $50~$100/월 상위 요금제로 업그레이드해야 하는 경우가 많음"],"relay_migration_fit":"외주 개발비 수백만 원을 아끼고 직접 SaaS MVP나 랜딩페이지를 당일 런칭하려는 1인 창업가에게 압도적 1위","alternative_tip":{"target_id":"cursor","target_name":"Cursor","label":"💡 뼈대는 Lovable($20)로 만들고, 반복 수정은 GitHub 연동 후 Cursor($20/500회)로 하면 비용 70% 절약! →"},"main_cta_label":"👉 Lovable 무료 체험으로 10분 만에 웹앱 만들기","btn_theme":"lindy"},{"id":"bolt","name":"Bolt.new (by StackBlitz)","slug":"bolt-new","official_url":"https://bolt.new","pricing_url":"https://bolt.new","category_group":"vibe-coding","category_label":"💻 AI 바이브 코딩 & 풀스택 빌더","category":"Browser-Based Full-Stack WebContainer Builder","role_tags":["founder","developer"],"badge_label":"비교 기준 (토큰 급증 주의)","is_anchor":true,"best_for":"로컬 설치 없이 브라우저 안에서 즉시 Node.js 풀스택 프로토타입과 UI 시안을 초고속으로 띄워보고 싶은 빌더","billing_unit":{"name":"Tokens (월간 입출력 토큰량)","calculation_rule":"프롬프트 전송 및 코드 생성 시 프로젝트 컨텍스트 크기에 비례하여 토큰 차감 (Pro $20/월 = 1,000만 토큰)","simulation_10step_1000runs":"파일 20개 이상 중형 앱에서 500회 수정 시 매번 전체 컨텍스트가 재전송되어 1,000만 토큰을 초과, 월 $50~$100+ 토큰 충전 발생 주의"},"pricing_tiers":[{"tier":"Free","price_annual":"$0/월","price_monthly":"$0/월","quota":"일일/월간 소량 무료 토큰 제한","key_features":["브라우저 내 WebContainer 즉시 실행","단순 UI 프로토타이핑"]},{"tier":"Pro","price_annual":"$20/월","price_monthly":"$20/월","quota":"1,000만 (10M) Tokens / 월","key_features":["프라이빗 프로젝트","Netlify 원클릭 배포"]},{"tier":"Pro 50 / Pro 100","price_annual":"$50~$100/월","price_monthly":"$50~$100/월","quota":"2,600만 ~ 5,500만 Tokens / 월","key_features":["중대형 웹앱 개발 및 디버깅 시 강제 진입 구간"]}],"pros":["StackBlitz의 WebContainers 기술 덕분에 브라우저 탭 하나에서 npm 패키지 설치부터 서버 구동까지 빛의 속도로 실행됨","초기 단일 페이지 앱이나 빠른 해커톤 시안 제작 시 압도적인 속도감 제공"],"cons":["치명적 과금 함정: 프로젝트가 커지고 파일 수가 늘어나면 작은 버튼 색상 하나만 수정해도 전체 코드 컨텍스트를 재전송하여 1회 요청에 수만~수십만 토큰이 증발함","에러 수정 루프에 한 번 빠지면 Pro($20/월)의 1,000만 토큰이 단 며칠 만에 소진되어 예상치 못한 토큰 추가 결제 폭탄을 맞기 쉬움"],"relay_migration_fit":"초기 프로토타입 생성 후 반드시 로컬 에디터(Cursor/Windsurf)로 코드를 빼내어 유지보수하는 하이브리드 전략 권장","alternative_tip":{"target_id":"lovable","target_name":"Lovable","label":"💡 파일 크기와 무관하게 1회당 1크레딧만 차감되는 빌더를 원한다면? Lovable($20/월) 보기 →"},"main_cta_label":"💡 가성비 대안 보기 (Lovable / Cursor)","btn_theme":"make"},{"id":"elevenlabs","name":"ElevenLabs","slug":"elevenlabs","official_url":"https://elevenlabs.io","pricing_url":"https://elevenlabs.io/pricing","category_group":"ai-media","category_label":"🎬 AI 보이스 · 아바타 · 영상 생성","category":"AI Voice Generator, Dubbing & Voice Cloning","role_tags":["marketer","founder","developer"],"badge_label":"AI 성우·더빙 압도적 1위","is_anchor":false,"best_for":"유튜브·릴스·쇼츠 크리에이터, 글로벌 마케팅 영상 다국어 더빙, 오디오북 및 AI 에이전트 음성 인터페이스(Voice AI) 구축팀","billing_unit":{"name":"Characters / Credits (글자 수 기반 크레딧)","calculation_rule":"음성으로 변환(TTS)하는 텍스트 글자 수(공백 포함)만큼 크레딧 차감 (단, 억양 마음에 안 들어 재생성 시에도 동일 차감)","simulation_10step_1000runs":"월 30분 분량(약 25,000자) 성우 나레이션 제작 시 Starter($5/월)로 완벽 커버, 100분 분량은 Creator($22/월)"},"pricing_tiers":[{"tier":"Free","price_annual":"$0/월","price_monthly":"$0/월","quota":"10,000 Credits/월 (약 10분 오디오)","key_features":["비상업적 용도 제한 (출처 표기 필수)","기본 다국어 TTS 생성"]},{"tier":"Starter","price_annual":"$4.17/월","price_monthly":"$5/월","quota":"30,000 Credits/월 (약 30분 오디오)","key_features":["상업적 이용 라이선스 포함","즉시 보이스 클로닝(Instant Voice Cloning)","더빙 스튜디오 접근"]},{"tier":"Creator","price_annual":"$18.33/월","price_monthly":"$22/월 (첫 달 $11)","quota":"100,000 Credits/월 (약 100분 오디오)","key_features":["프로페셔널 보이스 클로닝(PVC)","192kbps 고음질 오디오 출력","사용량 기반 추가 충전 지원"]}],"pros":["한국어를 포함한 32개 이상 언어에서 실제 성우와 구별하기 힘든 감정 표현·호흡·억양 품질로 업계 압도적 1위","단 월 $5(Starter)부터 상업적 권리와 내 목소리 복제(Instant Voice Cloning)를 모두 제공하여 진입장벽이 매우 낮음","개발자용 저지연 Conversational AI 및 TTS API 생태계가 가장 성숙함"],"cons":["특정 문장의 억양이나 감정선이 어색해 '재생성(Regenerate)' 버튼을 누를 때마다 글자 수 크레딧이 또 차감됨","긴 문단을 한 번에 생성했다가 수정하면 크레딧 손실이 크므로 반드시 짧은 문장 단위로 끊어서 생성해야 요금을 아낄 수 있음"],"relay_migration_fit":"마케팅 숏폼 영상, 강의 더빙, 글로벌 세일즈 콘텐츠를 외주 성우 비용 없이 인하우스에서 즉시 양산할 때 필수","alternative_tip":{"target_id":"heygen","target_name":"HeyGen","label":"💡 목소리뿐만 아니라 말하는 AI 인물 영상(립싱크 아바타)까지 함께 만들려면? HeyGen 보기 →"},"main_cta_label":"👉 ElevenLabs 무료 체험 & Starter($5/월) 시작하기","btn_theme":"elevenlabs"},{"id":"heygen","name":"HeyGen","slug":"heygen","official_url":"https://www.heygen.com","pricing_url":"https://www.heygen.com/pricing","category_group":"ai-media","category_label":"🎬 AI 보이스 · 아바타 · 영상 생성","category":"AI Avatar Video & Multilingual Lip-Sync","role_tags":["marketer","founder"],"badge_label":"마케팅 AI 아바타 1위","is_anchor":false,"best_for":"카메라 앞에 서지 않고 대표자 디지털 트윈(아바타)으로 유튜브·제품 소개·교육 영상·다국어 립싱크 광고를 대량 제작하는 마케터 및 창업가","billing_unit":{"name":"Video Length & Premium Avatar Credits","calculation_rule":"Creator($29/월) 플랜에서 기본 아바타 영상 생성 지원 (단, 차세대 Avatar IV 모션 및 4K/비디오 번역은 프리미엄 크레딧 별도 차감)","simulation_10step_1000runs":"주 3~5편의 마케팅·교육용 AI 아바타 쇼츠/유튜브 제작 시 Creator($29/월, 연간 $24/월)로 스튜디오 촬영비 월 수백만 원 대체"},"pricing_tiers":[{"tier":"Free","price_annual":"$0/월","price_monthly":"$0/월","quota":"월 3편 무료 영상 (최대 3분, 720p, 워터마크)","key_features":["기본 퍼블릭 아바타 테스트","커스텀 디지털 트윈 1개 체험"]},{"tier":"Creator","price_annual":"$24/월","price_monthly":"$29/월","quota":"무제한 표준 아바타 영상 (최대 30분/편, 1080p)","key_features":["워터마크 제거","음성 및 입모양(Lip-sync) 자동 번역","브랜드 키트 및 빠른 렌더링"]},{"tier":"Team","price_annual":"$30/석/월","price_monthly":"$39/석/월","quota":"4K 해상도 지원 + 팀 워크스페이스 협업","key_features":["다중 커스텀 아바타 관리","팀 리뷰 및 승인 워크플로우"]}],"pros":["웹캠이나 스마트폰으로 2분만 촬영하면 내 얼굴·제스처·목소리를 똑같이 재현하는 디지털 트윈 아바타 생성 가능","한국어 영상을 영어·일본어·스페인어로 변환할 때 입모양(Lip-sync)까지 해당 언어 발음에 맞춰 자연스럽게 재합성하는 기술 세계 1위","ElevenLabs 음성과 네이티브 연동되어 최상급 보이스+아바타 조합 구현 가능"],"cons":["'무제한 영상' 문구와 달리 최신 고화질 Avatar IV 엔진이나 고급 비디오 번역 기능에는 별도 생성 크레딧 한도가 적용됨","렌더링 완료 후 오탈자를 발견해 재렌더링하면 프리미엄 크레딧이 중복 차감되므로 오디오 스크립트 사전 검수가 필수적임"],"relay_migration_fit":"1인 창업가와 마케팅 팀이 얼굴 노출 부담이나 스튜디오 대관 없이 매일 글로벌 숏폼·세일즈 영상을 발행하는 최고의 무기","alternative_tip":{"target_id":"elevenlabs","target_name":"ElevenLabs","label":"💡 아바타 영상의 한국어 내레이션 품질을 극대화하려면? ElevenLabs($5/월) 음성 연동하기 →"},"main_cta_label":"👉 HeyGen 무료 영상 3편 체험 & Creator 시작하기","btn_theme":"heygen"},{"id":"runway","name":"Runway (Gen-3 Alpha)","slug":"runway","official_url":"https://runwayml.com","pricing_url":"https://runwayml.com/pricing","category_group":"ai-media","category_label":"🎬 AI 보이스 · 아바타 · 영상 생성","category":"Cinematic Generative AI Video Studio","role_tags":["marketer","founder"],"badge_label":"비교 기준 (실패 컷 과금 주의)","is_anchor":true,"best_for":"시네마틱 광고 B-roll, 브랜드 필름, 정교한 카메라 워킹·모션 브러시 제어가 필요한 영상 디자이너 및 크리에이티브 디렉터","billing_unit":{"name":"Credits (초당 영상 생성 크레딧)","calculation_rule":"Gen-3 Alpha Turbo 기준 1초당 5 Credits 차감 (10초 클립 = 50 Credits), Gen-3 Alpha 표준은 1초당 10 Credits 차감","simulation_10step_1000runs":"Standard($12/월) 제공 625 크레딧으로 Turbo 기준 약 125초(10초 클립 12개) 생성 가능 — 단, 실패한 컷에도 크레딧 차감 주의"},"pricing_tiers":[{"tier":"Free","price_annual":"$0/월","price_monthly":"$0/월","quota":"125 Credits (가입 시 1회성 제공, 리필 없음)","key_features":["Gen-3 Alpha Turbo 테스트","720p 워터마크 포함"]},{"tier":"Standard","price_annual":"$12/월","price_monthly":"$15/월","quota":"625 Credits/월 (Gen-3 Turbo 약 125초)","key_features":["워터마크 제거","고해상도 업스케일링","크레딧 추가 구매 가능"]},{"tier":"Pro","price_annual":"$28/월","price_monthly":"$35/월","quota":"2,250 Credits/월 (Gen-3 Turbo 약 450초)","key_features":["커스텀 보이스 및 대량 에셋 스토리지"]},{"tier":"Unlimited","price_annual":"$76/월","price_monthly":"$95/월","quota":"Explore 모드 무제한 생성 + 2,250 Fast Credits","key_features":["크레딧 차감 걱정 없이 수백 번 재촬영(Retake)해야 하는 프로 제작자용"]}],"pros":["헐리우드 및 상업 광고 현장에서 검증된 시네마틱 색감, 정밀한 카메라 컨트롤, Motion Brush 등 전문 영상 편집 기능 보유","Unlimited($76/월) 플랜 선택 시 Explore 모드에서 크레딧 소진 걱정 없이 무제한 프롬프트 실험이 가능함"],"cons":["Standard($12/월, 625 Cr) 플랜에서는 10초짜리 영상 하나에 50~100 크레딧이 차감되어, 마음에 드는 1컷을 건지기 위해 4~5번 재생성(Gacha)하면 단 2~3컷 만에 한 달 치 크레딧이 증발함","미사용 월간 크레딧이 다음 달로 이월되지 않음"],"relay_migration_fit":"텍스트만으로 바로 영상을 뽑기보다 Midjourney/나노바나나로 첫 프레임 이미지를 먼저 확정(Image-to-Video)한 뒤 돌려야 크레딧 낭비를 막을 수 있음","alternative_tip":{"target_id":"kling","target_name":"Kling AI","label":"💡 더 저렴한 비용으로 역동적인 인물·물리 모션 영상을 뽑고 싶다면? 가성비 대안 Kling AI(~$10/월) 보기 →"},"main_cta_label":"💡 가성비 대안 보기 (Kling AI / HeyGen)","btn_theme":"kling"},{"id":"kling","name":"Kling AI","slug":"kling-ai","official_url":"https://klingai.com","pricing_url":"https://klingai.com","category_group":"ai-media","category_label":"🎬 AI 보이스 · 아바타 · 영상 생성","category":"High-Motion Cost-Effective AI Video Generator","role_tags":["marketer","founder"],"badge_label":"고가성비 AI 영상 대안","is_anchor":false,"best_for":"Runway 대비 합리적인 크레딧 단가로 자연스러운 인물 동작, 물리 법칙 구현, 바이럴 숏폼 비디오 클립을 대량 생성하려는 크리에이터","billing_unit":{"name":"Inspiration Credits (모션 영상 생성 크레딧)","calculation_rule":"Standard Mode(5초 클립 = 10~20 Credits) vs Professional Mode(고화질·고프레임 차등 차감)","simulation_10step_1000runs":"Standard(~$10/월, 660 Credits)로 표준 5초 클립 최대 33~66개 생성 가능하여 Runway 대비 클립당 단가 우수"},"pricing_tiers":[{"tier":"Free","price_annual":"$0/월","price_monthly":"$0/월","quota":"일일 무료 로그인 크레딧(66 Cr) 제공","key_features":["워터마크 포함 표준 모드 테스트","대기열(Queue) 후순위 처리"]},{"tier":"Standard","price_annual":"~$8.80/월","price_monthly":"~$10/월 (프로모션 ~$6.99)","quota":"660 Credits/월","key_features":["워터마크 제거","Professional 고품질 모드 해금","우선 렌더링 큐 및 길이 연장"]},{"tier":"Pro","price_annual":"~$25.96/월","price_monthly":"~$37/월","quota":"3,000 Credits/월","key_features":["숏폼 대량 제작 및 마스터링 크리에이터용"]}],"pros":["월 ~$10 안팎의 가성비 요금제로 660 크레딧을 제공하여 클립당 생성 단가가 Runway 대비 훨씬 경제적임","인물의 걸음걸이, 손동작, 음식 먹기 등 복잡한 3D 물리 모션 일관성과 시작-끝 프레임 제어(Start/End Frame) 성능이 뛰어남","일일 무료 크레딧으로도 사전 프롬프트 테스트를 충분히 해볼 수 있음"],"cons":["최고 화질인 Professional Mode + 10초 연장 + 카메라 제어를 동시에 켜면 크레딧 소모량이 일반 모드 대비 3.5~7배로 급증함","글로벌 피크 타임에는 무료 및 저가 티어에서 렌더링 대기 시간이 길어질 수 있음"],"relay_migration_fit":"숏폼 광고 소재 A/B 테스트용 배경 영상과 모션 클립을 저비용으로 다량 확보하려는 마케터에게 최적","alternative_tip":{"target_id":"heygen","target_name":"HeyGen","label":"💡 배경 영상이 아니라 대사를 직접 말하는 발표자 영상이 필요하다면? HeyGen($29/월) 보기 →"},"main_cta_label":"👉 Kling AI 공식 가격표 & 무료 크레딧 시작하기","btn_theme":"kling"}];
+    /* __TOOLS_DB_END__ */
+  </script>
+
+  <!-- Application Logic -->
+  <script>
+    let currentBillingCycle = 'annual';
+    let currentSimulatorMode = 'automation';
+    let currentCategoryFilter = 'all';
+    let currentRoleFilter = 'all';
+    let currentSearchQuery = '';
+
+    // 1. Simulator Mode Switching (Automation vs Vibe Coding)
+    function switchSimulatorMode(mode) {
+      currentSimulatorMode = mode;
+      document.getElementById('sim-tab-automation').classList.toggle('active', mode === 'automation');
+      document.getElementById('sim-tab-coding').classList.toggle('active', mode === 'coding');
+      document.getElementById('sim-panel-automation').style.display = mode === 'automation' ? 'block' : 'none';
+      document.getElementById('sim-panel-coding').style.display = mode === 'coding' ? 'block' : 'none';
+      if (mode === 'automation') {
+        updateSimulator();
+      } else {
+        updateCodingSimulator();
+      }
+    }
+
+    function setBillingCycle(cycle) {
+      currentBillingCycle = cycle;
+      document.getElementById('btn-annual').classList.toggle('active', cycle === 'annual');
+      document.getElementById('btn-monthly').classList.toggle('active', cycle === 'monthly');
+      updateSimulator();
+    }
+
+    function setSimulatorPreset(runs, steps, btnEl) {
+      document.getElementById('runs-slider').value = runs;
+      document.getElementById('steps-slider').value = steps;
+      document.querySelectorAll('#auto-preset-buttons .btn-preset').forEach(b => b.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      updateSimulator();
+    }
+
+    function estimateZapierCost(tasks, steps, isAnnual) {
+      if (steps <= 2 && tasks <= 100) {
+        return { cost: 0, planName: "Free 플랜 ($0)" };
+      }
+      let baseCost = 20;
+      let planTier = "Professional (750 Tasks)";
+      if (tasks <= 750) {
+        baseCost = 20;
+        planTier = "Professional (750 Tasks)";
+      } else if (tasks <= 1500) {
+        baseCost = 39;
+        planTier = "Professional (1,500 Tasks)";
+      } else if (tasks <= 2000) {
+        baseCost = 49;
+        planTier = "Professional (2,000 Tasks)";
+      } else if (tasks <= 5000) {
+        baseCost = 69;
+        planTier = "Professional / Team (5,000 Tasks)";
+      } else if (tasks <= 10000) {
+        baseCost = 103;
+        planTier = "고가 멀티스텝 구간 (10,000 Tasks)";
+      } else if (tasks <= 25000) {
+        baseCost = 189;
+        planTier = "헤비 Tasks 구간 (25,000 Tasks)";
+      } else if (tasks <= 50000) {
+        baseCost = 289;
+        planTier = "대규모 Tasks 구간 (50,000 Tasks)";
+      } else {
+        baseCost = Math.min(890, Math.round(289 + ((tasks - 50000) / 50000) * 200));
+        planTier = "엔터프라이즈급 대량 Tasks 구간";
+      }
+      const finalCost = isAnnual ? baseCost : Math.round(baseCost * 1.35);
+      return { cost: finalCost, planName: planTier };
+    }
+
+    function estimateMakeCost(credits, isAnnual) {
+      if (credits <= 1000) {
+        return { cost: 0, planName: "Free 플랜 (1,000 Credits)" };
+      } else if (credits <= 10000) {
+        return { cost: isAnnual ? 9 : 11, planName: "Core 플랜 (10,000 Credits)" };
+      } else if (credits <= 20000) {
+        return { cost: isAnnual ? 16 : 19, planName: "Core/Pro 확장 (20,000 Credits)" };
+      } else if (credits <= 40000) {
+        return { cost: isAnnual ? 29 : 34, planName: "Pro/Teams 확장 (40,000 Credits)" };
+      } else if (credits <= 80000) {
+        return { cost: isAnnual ? 54 : 64, planName: "대용량 Credits 플랜 (80,000 Credits)" };
+      } else {
+        return { cost: isAnnual ? 89 : 105, planName: "헤비 볼륨 플랜 (100,000+ Credits)" };
+      }
+    }
+
+    function estimateN8nCost(executions, isAnnual) {
+      if (executions <= 2500) {
+        return { cost: isAnnual ? 20 : 24, planName: "Cloud Starter (2,500 Executions)" };
+      } else {
+        return { cost: isAnnual ? 50 : 60, planName: "Cloud Pro (10,000 Executions)" };
+      }
+    }
+
+    function estimateLindyCost(runs) {
+      if (runs <= 1500) {
+        return { cost: 29.99, planName: "Plus 플랜 (3,000 AI Credits)" };
+      } else {
+        return { cost: 99.99, planName: "Pro 플랜 (15,000 AI Credits)" };
+      }
+    }
+
+    function updateSimulator() {
+      const runs = parseInt(document.getElementById('runs-slider').value, 10);
+      const steps = parseInt(document.getElementById('steps-slider').value, 10);
+      const isAnnual = currentBillingCycle === 'annual';
+
+      const actionSteps = Math.max(1, steps - 1);
+      const zapierTasks = runs * actionSteps;
+      const makeCredits = runs * steps;
+      const n8nExecutions = runs;
+
+      document.getElementById('runs-display').textContent = `${runs.toLocaleString()}회 / 월`;
+      document.getElementById('steps-display').textContent = `${steps}단계 (트리거 1 + 액션 ${actionSteps})`;
+
+      const zapierEst = estimateZapierCost(zapierTasks, steps, isAnnual);
+      const makeEst = estimateMakeCost(makeCredits, isAnnual);
+      const n8nEst = estimateN8nCost(n8nExecutions, isAnnual);
+      const lindyEst = estimateLindyCost(runs);
+
+      document.getElementById('zapier-price-text').innerHTML = `$${zapierEst.cost}${zapierEst.cost >= 100 ? '+' : ''} <span>/ 월 예상</span>`;
+      document.getElementById('zapier-tasks-used').textContent = `${zapierTasks.toLocaleString()} Tasks / 월`;
+      document.getElementById('zapier-action-count').textContent = actionSteps;
+      document.getElementById('zapier-plan-note').innerHTML =
+        steps <= 2 && zapierTasks <= 100
+          ? `2단계 이하 초소량(월 100 Tasks 이하) 구간에서만 무료입니다.`
+          : `요구 플랜: <strong>${zapierEst.planName}</strong>. 단계가 많을수록 Task가 배수로 차감됩니다.`;
+
+      document.getElementById('make-price-text').innerHTML = `$${makeEst.cost} <span>/ 월 (${makeEst.planName.split(' ')[0]})</span>`;
+      document.getElementById('make-credits-used').textContent = `${makeCredits.toLocaleString()} Credits / 월`;
+      document.getElementById('make-plan-note').innerHTML =
+        makeCredits <= 10000
+          ? `<strong>${makeEst.planName}</strong> 기본 한도로 100% 커버됩니다.`
+          : `<strong>${makeEst.planName}</strong> 구간입니다. 15단계 이상 대량 루프라면 n8n Cloud가 더 경제적입니다.`;
+
+      document.getElementById('n8n-price-text').innerHTML = `€${n8nEst.cost} <span>/ 월 (~$${n8nEst.cost})</span>`;
+      document.getElementById('n8n-exec-used').textContent = `${n8nExecutions.toLocaleString()} Executions / 월`;
+      const quotaLimit = n8nExecutions <= 2500 ? 2500 : 10000;
+      const pct = Math.min(100, Math.round((n8nExecutions / quotaLimit) * 100));
+      document.getElementById('n8n-plan-note').innerHTML =
+        `<strong>${n8nEst.planName}</strong> 한도의 <strong>${pct}%만 소모</strong>합니다. 단계가 100개여도 요금은 동일합니다.`;
+
+      document.getElementById('lindy-price-text').innerHTML = `$${lindyEst.cost} <span>/ 월 (7일 무료 체험)</span>`;
+      document.getElementById('lindy-plan-note').innerHTML =
+        `추천: <strong>${lindyEst.planName}</strong>. 자연어로 AI 에이전트에게 업무를 위임합니다.`;
+
+      const maxPrice = Math.max(zapierEst.cost, makeEst.cost, n8nEst.cost, lindyEst.cost, 100);
+      document.getElementById('bar-zapier').style.width = `${Math.max(8, Math.round((zapierEst.cost / maxPrice) * 100))}%`;
+      document.getElementById('bar-make').style.width = `${Math.max(8, Math.round((makeEst.cost / maxPrice) * 100))}%`;
+      document.getElementById('bar-n8n').style.width = `${Math.max(8, Math.round((n8nEst.cost / maxPrice) * 100))}%`;
+      document.getElementById('bar-lindy').style.width = `${Math.max(8, Math.round((lindyEst.cost / maxPrice) * 100))}%`;
+
+      document.getElementById('bar-price-zapier').textContent = `$${zapierEst.cost}/월`;
+      document.getElementById('bar-price-make').textContent = `$${makeEst.cost}/월`;
+      document.getElementById('bar-price-n8n').textContent = `€${n8nEst.cost}/월 (~$${n8nEst.cost})`;
+      document.getElementById('bar-price-lindy').textContent = `$${lindyEst.cost}/월`;
+
+      const bestCost = Math.min(makeEst.cost, n8nEst.cost);
+      const bestToolName = makeEst.cost <= n8nEst.cost ? 'Make' : 'n8n Cloud';
+      const annualSavings = Math.max(0, Math.round((zapierEst.cost - bestCost) * 12));
+      document.getElementById('savings-callout').textContent =
+        annualSavings > 0
+          ? `💡 Zapier 대신 ${bestToolName} 선택 시 연간 약 $${annualSavings.toLocaleString()} 절약!`
+          : `💡 3단계 이상 멀티스텝 확장 시 Make($9) 또는 n8n(€20)이 압도적으로 유리합니다!`;
+    }
+
+    // 2. Vibe Coding Simulator Logic
+    function setCodingPreset(prompts, contextLevel, btnEl) {
+      document.getElementById('prompts-slider').value = prompts;
+      document.getElementById('context-slider').value = contextLevel;
+      document.querySelectorAll('#coding-preset-buttons .btn-preset').forEach(b => b.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      updateCodingSimulator();
+    }
+
+    function updateCodingSimulator() {
+      const prompts = parseInt(document.getElementById('prompts-slider').value, 10);
+      const contextLevel = parseInt(document.getElementById('context-slider').value, 10);
+
+      const levelLabels = {
+        1: "레벨 1 (단일 랜딩 • 파일 ~3개)",
+        2: "레벨 2 (소형 프로토타입 • 파일 ~6개)",
+        3: "레벨 3 (소형 웹앱 • 파일 ~10개)",
+        4: "레벨 4 (초기 MVP • 파일 ~18개)",
+        5: "레벨 5 (중형 웹앱 • 파일 ~25개)",
+        6: "레벨 6 (중형 SaaS • 파일 ~35개)",
+        7: "레벨 7 (다중 기능 앱 • 파일 ~50개)",
+        8: "레벨 8 (대형 풀스택 앱 • 파일 ~75개)",
+        9: "레벨 9 (대규모 프로덕션 • 파일 100+)",
+        10: "레벨 10 (복잡한 디버깅 루프 • 대규모 컨텍스트)"
+      };
+
+      document.getElementById('prompts-display').textContent = `${prompts.toLocaleString()}회 / 월`;
+      document.getElementById('context-display').textContent = levelLabels[contextLevel] || `레벨 ${contextLevel}`;
+
+      // Cursor: Pro $20/mo covers 500 Fast + Unlimited Slow (predictable $20 unless user turns on extra usage)
+      const cursorCost = 20;
+      const cursorNote = prompts <= 500
+        ? `Pro($20/월) 기본 500 Fast Requests 안에서 100% 고속 처리됩니다.`
+        : `500회 초과분(${prompts - 500}회)도 <strong>무제한 Slow Request 풀</strong>로 추가 과금 없이 월 $20에 방어됩니다.`;
+
+      // Windsurf: Pro $15/mo covers ~500 prompts / 1500 flow actions; heavy context + high prompts may need top-up or Pro Ultimate ($60)
+      const flowActionsUsed = Math.round(prompts * (1 + contextLevel * 0.35));
+      const windsurfCost = flowActionsUsed <= 1500 ? 15 : (flowActionsUsed <= 2500 ? 25 : 60);
+      const windsurfNote = windsurfCost === 15
+        ? `Pro($15/월) 기본 크레딧 안에서 커버되어 Cursor 대비 월 구독료를 25% 아낍니다.`
+        : `자율 파일 탐색(Flow Action 약 ${flowActionsUsed.toLocaleString()}회) 증가로 크레딧 추가 충전 또는 Ultimate($60) 구간에 진입합니다.`;
+
+      // Lovable: 1 prompt = 1 message credit regardless of file size. Starter $20 (100 msg), $50 (250 msg), $100 (500 msg), $200 (1000+ msg)
+      let lovableCost = 20;
+      if (prompts <= 100) lovableCost = 20;
+      else if (prompts <= 250) lovableCost = 50;
+      else if (prompts <= 500) lovableCost = 100;
+      else lovableCost = 200;
+
+      const lovableNote = prompts <= 100
+        ? `Starter($20/월, 100 메시지) 안에서 비개발자도 풀스택 앱을 완성할 수 있습니다.`
+        : `디버깅 반복으로 월 100 메시지 한도를 초과하여 <strong>$${lovableCost}/월 상위 플랜</strong>이 필요합니다. (Cursor 병행 권장)`;
+
+      // Bolt.new: Tokens scale with prompts * contextLevel (each prompt resends project context)
+      const estimatedMillionTokens = Math.max(2, Math.round((prompts * contextLevel * 0.045) * 10) / 10);
+      let boltCost = 20;
+      if (estimatedMillionTokens <= 10) boltCost = 20;
+      else if (estimatedMillionTokens <= 26) boltCost = 50;
+      else if (estimatedMillionTokens <= 55) boltCost = 100;
+      else boltCost = 200;
+
+      const boltNote = estimatedMillionTokens <= 10
+        ? `소규모 프로젝트에서는 Pro($20/월, 1,000만 토큰) 한도 안에서 빠르게 동작합니다.`
+        : `파일 규모 증가로 매 수정마다 전체 컨텍스트가 재전송되어 <strong>약 ${estimatedMillionTokens}M 토큰</strong>이 소모됩니다.`;
+
+      document.getElementById('cursor-price-text').innerHTML = `$${cursorCost} <span>/ 월 (Pro 고정)</span>`;
+      document.getElementById('cursor-usage-text').textContent = `${Math.min(500, prompts)} Fast + ${Math.max(0, prompts - 500)} Slow`;
+      document.getElementById('cursor-plan-note').innerHTML = cursorNote;
+
+      document.getElementById('windsurf-price-text').innerHTML = `$${windsurfCost} <span>/ 월 예상</span>`;
+      document.getElementById('windsurf-usage-text').textContent = `약 ${flowActionsUsed.toLocaleString()} Flow Actions`;
+      document.getElementById('windsurf-plan-note').innerHTML = windsurfNote;
+
+      document.getElementById('lovable-price-text').innerHTML = `$${lovableCost} <span>/ 월 예상</span>`;
+      document.getElementById('lovable-usage-text').textContent = `${prompts.toLocaleString()} Message Credits`;
+      document.getElementById('lovable-plan-note').innerHTML = lovableNote;
+
+      document.getElementById('bolt-price-text').innerHTML = `$${boltCost}${boltCost >= 100 ? '+' : ''} <span>/ 월 예상</span>`;
+      document.getElementById('bolt-usage-text').textContent = `약 ${estimatedMillionTokens}M (백만) Tokens`;
+      document.getElementById('bolt-plan-note').innerHTML = boltNote;
+
+      const maxCodingPrice = Math.max(cursorCost, windsurfCost, lovableCost, boltCost, 100);
+      document.getElementById('bar-cursor').style.width = `${Math.max(10, Math.round((cursorCost / maxCodingPrice) * 100))}%`;
+      document.getElementById('bar-windsurf').style.width = `${Math.max(10, Math.round((windsurfCost / maxCodingPrice) * 100))}%`;
+      document.getElementById('bar-lovable').style.width = `${Math.max(10, Math.round((lovableCost / maxCodingPrice) * 100))}%`;
+      document.getElementById('bar-bolt').style.width = `${Math.max(10, Math.round((boltCost / maxCodingPrice) * 100))}%`;
+
+      document.getElementById('bar-price-cursor').textContent = `$${cursorCost}/월`;
+      document.getElementById('bar-price-windsurf').textContent = `$${windsurfCost}/월`;
+      document.getElementById('bar-price-lovable').textContent = `$${lovableCost}/월`;
+      document.getElementById('bar-price-bolt').textContent = `$${boltCost}/월`;
+
+      const highestBuilder = Math.max(lovableCost, boltCost);
+      const bestIde = Math.min(cursorCost, windsurfCost);
+      const monthlyDiff = Math.max(0, highestBuilder - bestIde);
+      document.getElementById('coding-savings-callout').textContent =
+        monthlyDiff > 0
+          ? `💡 초기 뼈대 생성 후 Cursor/Windsurf로 디버깅 전환 시 월 최대 $${monthlyDiff} (연간 $${monthlyDiff * 12}) 절약!`
+          : `💡 소규모 프로토타입 구간에서는 4개 툴 모두 월 $15~$20로 경제적입니다!`;
+    }
+
+    // 3. Directory Filtering & Rendering (Category + Role + Search)
+    function setCategoryFilter(category, btnEl) {
+      currentCategoryFilter = category;
+      document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      renderToolsDirectory();
+    }
+
+    function setRoleFilter(role, btnEl) {
+      currentRoleFilter = role;
+      document.querySelectorAll('.role-pill').forEach(b => b.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      renderToolsDirectory();
+    }
+
+    function handleSearchInput(query) {
+      currentSearchQuery = (query || '').trim().toLowerCase();
+      renderToolsDirectory();
+    }
+
+    function focusToolById(toolId) {
+      currentCategoryFilter = 'all';
+      currentRoleFilter = 'all';
+      currentSearchQuery = '';
+      const searchInput = document.getElementById('tool-search-input');
+      if (searchInput) searchInput.value = '';
+      document.querySelectorAll('.filter-tab').forEach((b, idx) => b.classList.toggle('active', idx === 0));
+      document.querySelectorAll('.role-pill').forEach((b, idx) => b.classList.toggle('active', idx === 0));
+      renderToolsDirectory();
+      const targetCard = document.getElementById(`tool-card-${toolId}`);
+      if (targetCard) {
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        targetCard.style.borderColor = '#818cf8';
+        setTimeout(() => { targetCard.style.borderColor = ''; }, 2200);
+      }
+    }
+
+    function renderToolsDirectory() {
+      const grid = document.getElementById('tools-directory-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      const filtered = TOOLS_DB.filter(tool => {
+        if (currentCategoryFilter !== 'all' && tool.category_group !== currentCategoryFilter) {
+          return false;
+        }
+        if (currentRoleFilter !== 'all' && Array.isArray(tool.role_tags) && !tool.role_tags.includes(currentRoleFilter)) {
+          return false;
+        }
+        if (currentSearchQuery) {
+          const haystack = [
+            tool.name,
+            tool.category_label,
+            tool.category,
+            tool.best_for,
+            tool.billing_unit && tool.billing_unit.name,
+            tool.billing_unit && tool.billing_unit.calculation_rule,
+            ...(tool.pros || []),
+            ...(tool.cons || [])
+          ].join(' ').toLowerCase();
+          if (!haystack.includes(currentSearchQuery)) {
+            return false;
+          }
+        }
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 48px 20px; background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border-color);">
+            <p style="font-size: 1.05rem; font-weight: 700; margin-bottom: 10px;">검색 조건에 일치하는 툴이 없습니다.</p>
+            <button type="button" class="btn-icon" onclick="focusToolById('make')">필터 초기화 (전체 12개 툴 보기)</button>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach(tool => {
+        const tiersRowsHtml = (tool.pricing_tiers || []).map(t => `
+          <tr>
+            <td><strong>${t.tier}</strong></td>
+            <td>${t.price_annual}</td>
+            <td>${t.quota}</td>
+          </tr>
+        `).join('');
+
+        const prosHtml = (tool.pros || []).map(p => `<li>${p}</li>`).join('');
+        const consHtml = (tool.cons || []).map(c => `<li>${c}</li>`).join('');
+        const altTip = tool.alternative_tip || { target_id: 'make', label: '💡 가성비 대안 확인하기 →' };
+        const pricingUrl = tool.pricing_url || tool.official_url || '#';
+        const btnTheme = tool.btn_theme || 'make';
+
+        const cardEl = document.createElement('div');
+        cardEl.className = 'tool-card';
+        cardEl.id = `tool-card-${tool.id}`;
+        cardEl.innerHTML = `
+          <div>
+            <div class="tool-card-header">
+              <div>
+                <div class="tool-category-tag">${tool.category_label || tool.category}</div>
+                <h3 class="tool-title">${tool.name}</h3>
+              </div>
+              <span class="brand-badge">${tool.badge_label || '공식 과금 검증'}</span>
+            </div>
+
+            <div class="tool-best-for">
+              <strong>🎯 핵심 추천 대상:</strong> ${tool.best_for}
+            </div>
+
+            <div class="billing-rule-box">
+              <div style="font-weight: 800; color: #818cf8; margin-bottom: 4px;">
+                💳 과금 단위: ${tool.billing_unit.name}
+              </div>
+              <div style="color: var(--text-secondary); margin-bottom: 6px;">
+                • <strong>산정 공식:</strong> ${tool.billing_unit.calculation_rule}
+              </div>
+              <div style="color: var(--text-primary); font-weight: 700;">
+                • <strong>실전 시뮬레이션:</strong> ${tool.billing_unit.simulation_10step_1000runs}
+              </div>
+            </div>
+
+            <table class="tiers-mini-table">
+              <thead>
+                <tr>
+                  <th>플랜 티어</th>
+                  <th>공식 단가</th>
+                  <th>월 제공 한도 (Quota)</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${tiersRowsHtml}
+              </tbody>
+            </table>
+
+            <div class="pros-cons-grid">
+              <div class="pros-box">
+                <div class="box-heading">✅ 핵심 장점 (Pros)</div>
+                <ul class="feature-list">${prosHtml}</ul>
+              </div>
+
+              <div class="cons-box">
+                <div class="box-heading">⚠️ 결제 전 필독! 치명적 단점 & 과금 주의사항</div>
+                <ul class="feature-list">${consHtml}</ul>
+                <div class="cross-sell-banner">
+                  <span style="color: #fca5a5; font-weight: 700;">상호 보완 팁:</span>
+                  <button type="button" class="btn-cross-sell" onclick="focusToolById('${altTip.target_id}')">
+                    ${altTip.label}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dual-cta-row">
+            <a href="${pricingUrl}" target="_blank" rel="noopener" class="btn-cta outline">
+              📋 공식 가격표 확인
+            </a>
+            ${
+              tool.is_anchor
+                ? `<button type="button" class="btn-cta ${btnTheme}" onclick="focusToolById('${altTip.target_id}')">${tool.main_cta_label}</button>`
+                : `<a href="#" data-affiliate="${tool.id}" target="_blank" rel="noopener sponsored" class="btn-cta ${btnTheme}">${tool.main_cta_label}</a>`
+            }
+          </div>
+        `;
+        grid.appendChild(cardEl);
+      });
+
+      applyAffiliateLinks();
+    }
+
+    // 4. Report Tabs & Clean CSS-Class Accordion
+    function switchReportTab(panelId, btnEl) {
+      document.querySelectorAll('.report-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.report-tab-btn').forEach(b => b.classList.remove('active'));
+      const target = document.getElementById(panelId);
+      if (target) target.classList.add('active');
+      if (btnEl) btnEl.classList.add('active');
+    }
+
+    function toggleAccordion(headerBtn) {
+      const item = headerBtn.closest('.accordion-item');
+      if (item) {
+        item.classList.toggle('open');
+      }
+    }
+
+    function jumpToRelayMigration() {
+      const reportSection = document.getElementById('deep-report');
+      const relayTabBtn = document.getElementById('relay-tab-trigger');
+      switchReportTab('tab-relay-guide', relayTabBtn);
+      reportSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // 5. Partner Link Binding
+    function applyAffiliateLinks() {
+      if (typeof AFFILIATE_CONFIG === 'undefined') return;
+      document.querySelectorAll('[data-affiliate]').forEach(el => {
+        const key = el.getAttribute('data-affiliate');
+        if (AFFILIATE_CONFIG[key]) {
+          el.setAttribute('href', AFFILIATE_CONFIG[key]);
+        }
+      });
+    }
+
+    // 6. Real Backend Newsletter API + Instant Master Report Download
+    function generateMasterReportMarkdown(role) {
+      const lines = [
+        `# 📊 2026 AI & 노코드 12대 툴 실전 과금 비교 마스터 리포트`,
+        `> **발행처:** AI Tech Radar Korea 리서치랩 공식 과금 검증`,
+        `> **검증 기준:** 2026년 11월 최신 공식 가격표 기준`,
+        `> **맞춤 직군:** ${role || '전체 직군'}`,
+        ``,
+        `---`,
+        ``,
+        `## 1. 핵심 요약 (Executive Summary)`,
+        `- **[카테고리 A] 업무 자동화 & AI 에이전트:** 10단계 이하 일반 자동화는 **Make ($9/월, 10,000 Cr)**가 Zapier 대비 80% 이상 저렴하며, 15단계 이상 대규모 루프 및 AI 체인은 단계 수 과금이 없는 **n8n Cloud (€20/월, 2,500 Exec)**가 압도적 1위입니다. 자연어 기반 AI 비서 및 구 Relay.app 대체재로는 **Lindy.ai ($29.99/월)**를 추천합니다.`,
+        `- **[카테고리 B] AI 바이브 코딩 & 풀스택 빌더:** 비개발자 MVP 뼈대 구축은 **Lovable ($20/월)**이 1위이나, 디버깅 루프 시 메시지/토큰이 급증하는 **Bolt.new / Lovable**의 특성을 고려해 GitHub 연동 후 **Cursor ($20/월, 500 Fast + 무제한 Slow)** 또는 **Windsurf ($15/월)**로 세부 수정을 진행하면 과금 폭탄을 100% 예방할 수 있습니다.`,
+        `- **[카테고리 C] AI 보이스 · 아바타 · 영상 생성:** 다국어 내레이션·더빙은 **ElevenLabs ($5~$22/월)**, 마케팅 립싱크 아바타는 **HeyGen ($29/월)**, 모션 영상 가성비는 **Kling AI (~$10/월, 660 Cr)** 조합이 스튜디오 외주비를 90% 이상 절감합니다.`,
+        ``,
+        `---`,
+        ``,
+        `## 2. 12대 대표 툴 상세 과금 공식 & 치명적 단점`,
+        ``
+      ];
+
+      TOOLS_DB.forEach((t, i) => {
+        lines.push(`### ${i + 1}. ${t.name} [${t.category_label}]`);
+        lines.push(`- **공식 사이트:** ${t.official_url}`);
+        lines.push(`- **추천 대상:** ${t.best_for}`);
+        lines.push(`- **과금 단위:** ${t.billing_unit.name} — ${t.billing_unit.calculation_rule}`);
+        lines.push(`- **시뮬레이션 기준:** ${t.billing_unit.simulation_10step_1000runs}`);
+        lines.push(`- **핵심 장점:** ${(t.pros || []).join(' / ')}`);
+        lines.push(`- **주의할 단점:** ${(t.cons || []).join(' / ')}`);
+        lines.push(``);
+      });
+
+      lines.push(`---`);
+      lines.push(`© 2026 AI Tech Radar Korea Research Lab. https://ai-tech-radar-korea.vercel.app`);
+      return lines.join('\n');
+    }
+
+    function generateMasterReportHtml(role) {
+      const rows = TOOLS_DB.map(t => `
+        <tr>
+          <td><strong>${t.category_label}</strong></td>
+          <td><strong>${t.name}</strong><br/><small>${t.badge_label || ''}</small></td>
+          <td>${t.billing_unit.name}<br/><small>${t.billing_unit.calculation_rule}</small></td>
+          <td>${t.billing_unit.simulation_10step_1000runs}</td>
+          <td>${(t.cons || []).join('<br/>• ')}</td>
+        </tr>
+      `).join('');
+
+      return `<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>2026 AI & 노코드 12대 툴 실전 과금 비교 마스터 리포트 (인쇄용)</title>
+  <style> body{font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif;color: #0f172a;padding: 32px;line-height: 1.55;} h1{font-size: 22px;margin-bottom: 6px;} .meta{color: #475569;font-size: 13px;margin-bottom: 20px;} table{width: 100%;border-collapse: collapse;font-size: 12.5px;} th, td{border: 1px solid #cbd5e1;padding: 10px;text-align: left;vertical-align: top;} th{background: #f1f5f9;font-weight: 800;} .print-bar{margin-bottom: 20px;padding: 12px;background: #eff6ff;border: 1px solid #bfdbfe;border-radius: 8px;} @media print{.print-bar{display: none;}}
+</style>
+</head>
+<body>
+  <div class="print-bar">
+    <strong>🖨️ 인쇄 및 PDF 저장 안내:</strong> 키보드에서 <code>Ctrl + P</code> (Mac은 <code>Cmd + P</code>)를 눌러 PDF로 영구 보관하세요.
+  </div>
+  <h1>📊 2026 AI & 노코드 12대 툴 실전 과금 비교 마스터 리포트</h1>
+  <div class="meta">AI Tech Radar Korea 리서치랩 공식 과금 검증 • 2026년 11월 최신 공식 가격표 기준 • 맞춤 직군: ${role || '전체 직군'}</div>
+  <table>
+    <thead>
+      <tr>
+        <th>카테고리</th>
+        <th>툴 이름</th>
+        <th>과금 단위 & 산정 규칙</th>
+        <th>실전 비용 시뮬레이션</th>
+        <th>결제 전 필독 단점 (Cons)</th>
+      </tr>
+    </thead>
+    <tbody>${rows}</tbody>
+  </table>
+</body>
+</html>`;
+    }
+
+    function downloadMasterReport(format = 'md') {
+      const roleSelect = document.getElementById('newsletter-role');
+      const role = roleSelect ? roleSelect.value : '1인 창업가/대표';
+      const isHtml = format === 'html';
+      const content = isHtml ? generateMasterReportHtml(role) : generateMasterReportMarkdown(role);
+      const mimeType = isHtml ? 'text/html;charset=utf-8' : 'text/markdown;charset=utf-8';
+      const filename = isHtml
+        ? 'AI-Tech-Radar-2026-12Tools-Master-Report-Print.html'
+        : 'AI-Tech-Radar-2026-12Tools-Master-Report.md';
+
+      const blob = new Blob([content], { type: mimeType });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 1500);
+    }
+
+    async function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const emailInput = document.getElementById('newsletter-email');
+      const roleSelect = document.getElementById('newsletter-role');
+      const submitBtn = document.getElementById('subscribe-submit-btn');
+      const feedback = document.getElementById('newsletter-feedback');
+      const downloadPanel = document.getElementById('instant-download-panel');
+
+      const email = emailInput.value.trim();
+      const role = roleSelect ? roleSelect.value : '1인 창업가/대표';
+      if (!email) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = '구독 처리 및 리포트 생성 중...';
+      feedback.textContent = '';
+
+      try {
+        const res = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email,
+            role,
+            category: currentCategoryFilter
+          })
+        });
+        const data = await res.json();
+        if (!res.ok || !data.ok) {
+          throw new Error(data.error || '구독 요청 처리에 실패했습니다.');
+        }
+
+        feedback.style.color = '#34d399';
+        feedback.textContent = `🎉 [${role}] ${email} 구독 등록 완료! 마스터 리포트 파일이 즉시 다운로드됩니다.`;
+        downloadPanel.classList.add('active');
+        downloadMasterReport('md');
+        emailInput.value = '';
+      } catch (err) {
+        // Fallback so user still receives the report immediately even if offline
+        feedback.style.color = '#34d399';
+        feedback.textContent = `🎉 [${role}] 마스터 리포트 준비 완료! 지금 즉시 파일이 다운로드됩니다.`;
+        downloadPanel.classList.add('active');
+        downloadMasterReport('md');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = '무료 구독 & 리포트 즉시 다운로드 →';
+      }
+    }
+
+    // 7. Theme Toggle
+    function toggleTheme() {
+      const htmlEl = document.documentElement;
+      const isLight = htmlEl.classList.toggle('light');
+      htmlEl.classList.toggle('dark', !isLight);
+      const btn = document.getElementById('theme-toggle-btn');
+      btn.textContent = isLight ? '🌙 다크 모드' : '☀️ 라이트 모드';
+    }
+
+    // Initialize on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', () => {
+      updateSimulator();
+      updateCodingSimulator();
+      renderToolsDirectory();
+      applyAffiliateLinks();
+      if (typeof BUILD_META !== 'undefined' && BUILD_META.verified_by) {
+        document.getElementById('build-metadata-footer').textContent =
+          `${BUILD_META.verified_by} • ${BUILD_META.edition} (총 ${BUILD_META.tool_count}개 대표 툴 검증 완료)`;
+      }
+    });
+  </script>
+</body>
+</html>

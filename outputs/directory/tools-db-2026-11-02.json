@@ -1,0 +1,723 @@
+[
+  {
+    "id": "make",
+    "name": "Make (구 Integromat)",
+    "slug": "make",
+    "official_url": "https://www.make.com",
+    "pricing_url": "https://www.make.com/en/pricing",
+    "category_group": "automation",
+    "category_label": "⚡ 업무 자동화 & AI 에이전트",
+    "category": "Visual No-Code Workflow Automation",
+    "role_tags": ["founder", "marketer"],
+    "badge_label": "창업가·마케터 1위",
+    "is_anchor": false,
+    "best_for": "1인 창업가, 퍼포먼스·콘텐츠 마케터, 시각적 순서도(Flowchart) 기반 중소규모 멀티스텝 자동화",
+    "billing_unit": {
+      "name": "Credits (구 Operations)",
+      "calculation_rule": "시나리오 내 모듈(노드)이 1회 작동할 때마다 1 Credit 차감 (라우터·필터는 무료, 무거운 AI 모듈은 차등 차감)",
+      "simulation_10step_1000runs": "월 10,000 Credits 소모 → Core($9/월) 기본 제공량 안에서 100% 커버 가능"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "1,000 Credits/월",
+        "key_features": ["활성 시나리오 최대 2개", "최소 실행 주기 15분", "3,500+ 앱 연동"]
+      },
+      {
+        "tier": "Core",
+        "price_annual": "$9/월",
+        "price_monthly": "~$10.59/월",
+        "quota": "10,000 Credits/월",
+        "key_features": ["무제한 활성 시나리오", "최소 1분 주기 실행", "Make API 접근"]
+      },
+      {
+        "tier": "Pro",
+        "price_annual": "$16/월",
+        "price_monthly": "~$18.82/월",
+        "quota": "10,000 Credits/월 (확장 가능)",
+        "key_features": ["우선 실행(Priority execution)", "커스텀 변수 지원", "전문 실행 로그 검색"]
+      },
+      {
+        "tier": "Teams",
+        "price_annual": "$29/월",
+        "price_monthly": "~$34.12/월",
+        "quota": "10,000 Credits/월 (확장 가능)",
+        "key_features": ["팀 권한 관리", "시나리오 템플릿 공유"]
+      }
+    ],
+    "pros": [
+      "월 $9에 10,000 Credits를 제공하여 Zapier 대비 멀티스텝 자동화 비용을 80% 이상 절감",
+      "직관적인 2D 시각적 순서도 UI로 복잡한 조건 분기(Router) 설계가 용이함",
+      "라우터 및 필터 단계에 크레딧이 차감되지 않음",
+      "3,500개 이상의 방대한 서드파티 SaaS 및 AI 모듈 즉시 연동 지원"
+    ],
+    "cons": [
+      "초보자의 경우 JSON·배열(Iterator, Aggregator) 처리 방식에 1~2시간의 초기 학습 곡선이 존재함",
+      "수천 건의 데이터 행을 반복(Loop) 처리할 때는 모듈 실행 횟수만큼 크레딧이 소모되어 n8n 대비 불리함"
+    ],
+    "relay_migration_fit": "Relay.app에서 합리적인 가격으로 다양한 서드파티 SaaS 멀티스텝 연동을 사용하던 마케터 및 창업가에게 최적의 대안",
+    "alternative_tip": {
+      "target_id": "n8n",
+      "target_name": "n8n Cloud",
+      "label": "💡 대량 데이터 루프(Loop)가 많다면? 단계 수 무제한 n8n Cloud(€20/월) 보기 →"
+    },
+    "main_cta_label": "👉 Make 무료 체험 & Core($9/월) 시작하기",
+    "btn_theme": "make"
+  },
+  {
+    "id": "n8n",
+    "name": "n8n Cloud (& Self-hosted)",
+    "slug": "n8n",
+    "official_url": "https://n8n.io",
+    "pricing_url": "https://n8n.io/pricing/",
+    "category_group": "automation",
+    "category_label": "⚡ 업무 자동화 & AI 에이전트",
+    "category": "Developer-First & AI Agent Workflow Automation",
+    "role_tags": ["developer", "founder"],
+    "badge_label": "개발자·AI 빌더 1위",
+    "is_anchor": false,
+    "best_for": "풀스택 개발자, AI 에이전트 빌더, 대량 데이터 루프(Loop) 및 15단계 이상 헤비 워크플로우 운영자",
+    "billing_unit": {
+      "name": "Workflow Executions (전체 실행 횟수)",
+      "calculation_rule": "워크플로우 안에 노드가 5개든 100개든 전체 워크플로우가 1회 끝까지 실행될 때 단 1 Execution 차감",
+      "simulation_10step_1000runs": "월 1,000 Executions 소모 → Cloud Starter(€20/월) 기본 한도 2,500회의 40%만 소모"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Self-hosted (Community)",
+        "price_annual": "$0 (오픈소스)",
+        "price_monthly": "$0 (서버 자부담)",
+        "quota": "무제한 실행 (자체 VPS 호스팅 필요)",
+        "key_features": ["Docker/VPS 구축 시 무료", "서버 보안·업데이트·장애 복구 직접 관리 필요"]
+      },
+      {
+        "tier": "Cloud Starter",
+        "price_annual": "€20/월 (~$20)",
+        "price_monthly": "€24/월 (~$24)",
+        "quota": "2,500 Executions/월 (단계 수 무제한)",
+        "key_features": ["무제한 활성 워크플로우 및 유저", "동시 실행 5개", "관리형 클라우드 인프라"]
+      },
+      {
+        "tier": "Cloud Pro",
+        "price_annual": "€50/월 (~$50)",
+        "price_monthly": "€60/월 (~$60)",
+        "quota": "10,000 Executions/월",
+        "key_features": ["동시 실행 최대 20~50개", "공유 프로젝트 3개", "워크플로우 히스토리 및 30일 인사이트"]
+      }
+    ],
+    "pros": [
+      "노드 개수와 무관하게 전체 실행 1회당 과금되므로 대량 루프와 50단계 이상의 대형 파이프라인에서 가성비 압도적 1위",
+      "LangChain 기반 AI 에이전트, 벡터 DB, 메모리 노드를 기본 내장하여 AI 빌더에게 최적화됨",
+      "JavaScript 및 Python 코드 노드를 자유롭게 작성 가능",
+      "Cloud Starter(월 €20) 이용 시 서버 관리·업데이트·보안 세팅에 드는 개발자 시급을 완벽히 절약 가능"
+    ],
+    "cons": [
+      "비개발자 직군에게는 JSON 데이터 다루기와 기술적 UI의 진입장벽이 다소 높음",
+      "무료 셀프호스팅 선택 시 Docker/VPS 구축, SSL 보안, 버전 업데이트 장애 복구를 직접 감당해야 함"
+    ],
+    "relay_migration_fit": "Relay.app에서 AI 워크플로우와 웹훅/API 중심의 고도화된 자동화를 구축하던 개발자 및 테크 팀에게 최적의 대안",
+    "alternative_tip": {
+      "target_id": "make",
+      "target_name": "Make",
+      "label": "💡 비개발자 친화적인 시각적 UI가 필요하다면? Make Core($9/월) 보기 →"
+    },
+    "main_cta_label": "👉 n8n Cloud Starter 무료 트라이얼 시작하기",
+    "btn_theme": "n8n"
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "slug": "zapier",
+    "official_url": "https://zapier.com",
+    "pricing_url": "https://zapier.com/pricing",
+    "category_group": "automation",
+    "category_label": "⚡ 업무 자동화 & AI 에이전트",
+    "category": "Beginner-Friendly SaaS Integration",
+    "role_tags": ["marketer", "founder"],
+    "badge_label": "비교 기준 (멀티스텝 고비용 주의)",
+    "is_anchor": true,
+    "best_for": "개발 지식이 전혀 없고 7,000개 이상의 마이너 서드파티 앱을 2~3단계로 즉시 연결해야 하는 입문자",
+    "billing_unit": {
+      "name": "Tasks (액션 실행 수)",
+      "calculation_rule": "트리거(Trigger)와 필터는 무료이나, 실제 Action 단계가 성공할 때마다 1 Task 차감",
+      "simulation_10step_1000runs": "월 9,000 Tasks 소모 (트리거 제외 9개 액션 × 1,000회 → 월 $103+ 고가 요금제 구간 진입)"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "100 Tasks/월",
+        "key_features": ["무제한 Zaps 제공", "단, 2-step Zaps(트리거 1 + 액션 1)로만 엄격 제한", "폴링 주기 15분"]
+      },
+      {
+        "tier": "Professional",
+        "price_annual": "$19.99/월",
+        "price_monthly": "$29.99/월",
+        "quota": "750 Tasks/월부터 시작",
+        "key_features": ["멀티스텝(Multi-step) Zaps 허용", "프리미엄 앱 무제한", "Webhooks, Filters, Paths 지원"]
+      },
+      {
+        "tier": "Team",
+        "price_annual": "$69/월",
+        "price_monthly": "$103.50/월",
+        "quota": "2,000 Tasks/월부터 시작",
+        "key_features": ["최대 25명 이상 협업", "공유 워크스페이스 및 앱 연결", "SAML SSO 지원"]
+      }
+    ],
+    "pros": [
+      "업계 최다인 7,000개 이상의 서드파티 SaaS 연동 지원",
+      "학습 곡선이 거의 없어 비개발자도 5분 만에 단순 연동 완성 가능"
+    ],
+    "cons": [
+      "무료 플랜에서 3단계 이상 멀티스텝 구성이 전면 차단됨 (2-step 제한)",
+      "유료 플랜($19.99~$29.99/월) 기본 제공량이 750 Tasks에 불과해 멀티스텝 자동화 시 비용이 기하급수적으로 상승함"
+    ],
+    "relay_migration_fit": "단순 2~3단계 연동에는 쓸 만하나, Relay.app 유저가 기대하는 AI 에이전트 가성비 측면에서는 Make나 Lindy.ai보다 비용 부담이 큼",
+    "alternative_tip": {
+      "target_id": "make",
+      "target_name": "Make",
+      "label": "💡 멀티스텝 요금 절감: 똑같은 10단계 자동화를 Make($9/월)로 80% 저렴하게 전환하기 →"
+    },
+    "main_cta_label": "💡 가성비 대안 보기 (Make $9/월)",
+    "btn_theme": "make"
+  },
+  {
+    "id": "lindy",
+    "name": "Lindy.ai",
+    "slug": "lindy-ai",
+    "official_url": "https://www.lindy.ai",
+    "pricing_url": "https://www.lindy.ai/pricing",
+    "category_group": "automation",
+    "category_label": "⚡ 업무 자동화 & AI 에이전트",
+    "category": "No-Code Autonomous AI Agent Platform",
+    "role_tags": ["founder", "marketer"],
+    "badge_label": "AI 비서 & Relay 대안 1위",
+    "is_anchor": false,
+    "best_for": "노드 연결조차 번거로워 자연어 명령만으로 이메일 분류·일정 조율·회의록·리드 발굴을 위임하려는 1인 창업가 및 구 Relay.app 유저",
+    "billing_unit": {
+      "name": "Credits (AI 에이전트 크레딧)",
+      "calculation_rule": "작업 복잡도에 따라 유동 차감 (단순 요약·답장 2~250 크레딧, 심층 리서치·티켓 처리 250~1,000 크레딧)",
+      "simulation_10step_1000runs": "Plus($29.99/월, 3,000 Cr) 또는 Pro($99.99/월, 15,000 Cr) 워크스페이스 풀에서 유동 차감"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free Trial",
+        "price_annual": "7일 무료 체험",
+        "price_monthly": "7일 무료 체험 (영구 무료 폐지)",
+        "quota": "체험 크레딧 제공",
+        "key_features": ["결제 전 실제 워크플로우 크레딧 소모량 사전 검증 가능"]
+      },
+      {
+        "tier": "Plus",
+        "price_annual": "$29.99/월",
+        "price_monthly": "$29.99/월",
+        "quota": "3,000 Credits/월 (미사용분 이월 불가)",
+        "key_features": ["Computer Use, AI 모델 선택, MCP 연동", "최대 5개 인박스 연결", "워크스페이스 내 크레딧 공유"]
+      },
+      {
+        "tier": "Pro",
+        "price_annual": "$99.99/월",
+        "price_monthly": "$99.99/월",
+        "quota": "15,000 Credits/월",
+        "key_features": ["일상적인 비즈니스 업무 전면 위임 및 헤비 오토메이션 유저용"]
+      }
+    ],
+    "pros": [
+      "복잡한 순서도나 코딩 없이 자연어 프롬프트만으로 자율형 AI 직원(에이전트) 생성 가능",
+      "Computer Use 및 MCP 연동 등 최신 에이전트 기능을 Plus($29.99/월) 플랜부터 동일하게 제공",
+      "서비스 종료된 Relay.app의 AI 비서 및 휴먼 워크플로우 경험을 가장 매끄럽게 대체"
+    ],
+    "cons": [
+      "영구 무료 플랜이 폐지되어 7일 무료 체험 후 유료 전환이 필요함",
+      "월간 미사용 잔여 크레딧이 다음 달로 이월(Rollover)되지 않으며 무거운 작업 시 크레딧 소모 폭이 큼"
+    ],
+    "relay_migration_fit": "Relay.app의 2026년 8~9월 서비스 종료 이후, 노코드 AI 에이전트 및 이메일/미팅/CRM 자동화를 쓰던 유저들이 가장 먼저 이동해야 할 1순위 대체재",
+    "alternative_tip": {
+      "target_id": "make",
+      "target_name": "Make",
+      "label": "💡 정형화된 규칙 기반 연동으로 비용을 낮추려면? Make Core($9/월) 병행하기 →"
+    },
+    "main_cta_label": "👉 Lindy.ai 7일 무료 체험 시작하기",
+    "btn_theme": "lindy"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "slug": "cursor",
+    "official_url": "https://www.cursor.com",
+    "pricing_url": "https://www.cursor.com/pricing",
+    "category_group": "vibe-coding",
+    "category_label": "💻 AI 바이브 코딩 & 풀스택 빌더",
+    "category": "AI-Native Code Editor (IDE)",
+    "role_tags": ["developer", "founder"],
+    "badge_label": "개발자 생산성 1위",
+    "is_anchor": false,
+    "best_for": "실무 풀스택 개발자, 기술 창업가, 대규모 코드베이스 리팩토링 및 정밀한 에이전트 코딩이 필요한 빌더",
+    "billing_unit": {
+      "name": "Fast Requests + 무제한 Slow Pool",
+      "calculation_rule": "Pro $20/월 가입 시 월 500회 프리미엄 Fast Request 제공, 소진 후에도 추가 과금 없이 무제한 Slow Request 사용 가능 (단, Max 모드·종량제 ON 시 별도 과금)",
+      "simulation_10step_1000runs": "월 500~1,000회 코딩 작업 시 Pro $20/월 고정 요금으로 안정적 방어 (종량제 한도 설정 시 과금 폭탄 0원)"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Hobby (Free)",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "2주 Pro 트라이얼 / 제한된 요청",
+        "key_features": ["기본 코드 자동완성 및 에이전트 체험", "소규모 테스트용"]
+      },
+      {
+        "tier": "Pro",
+        "price_annual": "$16/월",
+        "price_monthly": "$20/월",
+        "quota": "500 Fast Requests/월 + 무제한 Slow",
+        "key_features": ["Claude Sonnet / GPT-4o / Gemini 프리미엄 모델", "멀티파일 Composer 에이전트", "무제한 Tab 자동완성"]
+      },
+      {
+        "tier": "Business",
+        "price_annual": "$32/유저/월",
+        "price_monthly": "$40/유저/월",
+        "quota": "팀 중앙 과금 + 프라이버시 강제 적용",
+        "key_features": ["조직 단위 데이터 학습 배제(Zero Data Retention)", "관리자 대시보드 및 SSO"]
+      }
+    ],
+    "pros": [
+      "월 500회 Fast Request를 다 써도 무제한 Slow Request 풀이 작동하여 월 $20 고정비로 예측 가능한 코딩 가능",
+      "VS Code 완벽 호환으로 기존 확장 프로그램과 단축키를 1초 만에 그대로 이전 가능",
+      "전체 리포지토리 인덱싱(@Codebase) 정확도와 멀티파일 동시 수정(Composer) 완성도가 업계 최고 수준"
+    ],
+    "cons": [
+      "대시보드에서 'Usage-based pricing(종량제 추가 과금)'과 'Max Mode'를 켜둔 채 대형 컨텍스트 작업을 반복하면 월 $50~$100+ 추가 요금이 청구될 수 있음",
+      "비개발자가 코드 한 줄 모르고 배포까지 원클릭으로 끝내기에는 터미널·Git 기초 지식이 필요함"
+    ],
+    "relay_migration_fit": "직접 사내 어드민이나 마이크로 SaaS를 바이브 코딩으로 구축해 고정 SaaS 구독료를 아끼려는 창업가·개발자의 필수 도구",
+    "alternative_tip": {
+      "target_id": "windsurf",
+      "target_name": "Windsurf",
+      "label": "💡 월 구독료를 $15로 더 낮추고 싶다면? 가성비 AI IDE Windsurf($15/월) 비교하기 →"
+    },
+    "main_cta_label": "👉 Cursor 공식 가격표 & 무료 다운로드",
+    "btn_theme": "cursor"
+  },
+  {
+    "id": "windsurf",
+    "name": "Windsurf (by Codeium)",
+    "slug": "windsurf",
+    "official_url": "https://codeium.com/windsurf",
+    "pricing_url": "https://codeium.com/windsurf",
+    "category_group": "vibe-coding",
+    "category_label": "💻 AI 바이브 코딩 & 풀스택 빌더",
+    "category": "Agentic AI IDE (Cascade Engine)",
+    "role_tags": ["developer", "founder"],
+    "badge_label": "가성비 AI IDE 대안",
+    "is_anchor": false,
+    "best_for": "Cursor($20/월)보다 저렴한 $15/월에 자율 컨텍스트 파악(Cascade) 에이전트 코딩을 원하는 실속파 개발자 및 빌더",
+    "billing_unit": {
+      "name": "Prompt & Flow Action Credits",
+      "calculation_rule": "사용자 프롬프트 및 AI가 터미널 실행·파일 수정을 자율 수행하는 Flow Action 단위로 크레딧 차감",
+      "simulation_10step_1000runs": "Pro $15/월로 중소규모 개발 프로젝트를 합리적으로 커버 (Cursor 대비 기본 구독료 25% 절감)"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "무제한 기본 자동완성 + 체험용 크레딧",
+        "key_features": ["Cascade 에이전트 무료 체험", "빠른 인라인 코드 자동완성"]
+      },
+      {
+        "tier": "Pro",
+        "price_annual": "$15/월",
+        "price_monthly": "$15/월",
+        "quota": "500 Prompt Credits + 1,500 Flow Action Credits",
+        "key_features": ["Cascade 심층 컨텍스트 에이전트", "프리미엄 LLM 모델 지원", "이미지-투-코드 변환"]
+      },
+      {
+        "tier": "Pro Ultimate",
+        "price_annual": "$60/월",
+        "price_monthly": "$60/월",
+        "quota": "무제한 User Prompt + 3,000 Flow Action Credits",
+        "key_features": ["대규모 프로젝트 풀타임 바이브 코더용"]
+      }
+    ],
+    "pros": [
+      "월 $15라는 경쟁력 있는 가격으로 Cursor Pro($20/월) 대비 초기 고정비 부담이 낮음",
+      "Cascade 엔진이 개발자가 일일이 파일을 지정(@file)하지 않아도 관련 파일 컨텍스트를 스스로 찾아내어 수정함",
+      "깔끔하고 모던한 UI로 바이브 코딩 입문 개발자에게 쾌적한 경험 제공"
+    ],
+    "cons": [
+      "AI가 스스로 파일을 탐색·수정·터미널 실행을 반복할 때 'Flow Action 크레딧'이 예상보다 빠르게 소진될 수 있음",
+      "크레딧 소진 후 추가 충전(Flex Credits) 반복 시 결국 상위 요금제($60/월)나 Cursor($20/월)보다 비싸질 수 있어 잔여량 관리가 필요함"
+    ],
+    "relay_migration_fit": "합리적인 월 구독료로 사내 자동화 스크립트 및 웹서비스를 빠르게 제작하려는 개발자·창업가에게 추천",
+    "alternative_tip": {
+      "target_id": "cursor",
+      "target_name": "Cursor",
+      "label": "💡 크레딧 소진 후에도 무제한 Slow 풀이 보장되는 에디터를 원한다면? Cursor($20/월) 보기 →"
+    },
+    "main_cta_label": "👉 Windsurf 무료 체험 & Pro($15/월) 시작하기",
+    "btn_theme": "windsurf"
+  },
+  {
+    "id": "lovable",
+    "name": "Lovable",
+    "slug": "lovable",
+    "official_url": "https://lovable.dev",
+    "pricing_url": "https://lovable.dev/pricing",
+    "category_group": "vibe-coding",
+    "category_label": "💻 AI 바이브 코딩 & 풀스택 빌더",
+    "category": "No-Code Full-Stack AI Web App Builder",
+    "role_tags": ["founder", "marketer"],
+    "badge_label": "비개발자 풀스택 빌더 1위",
+    "is_anchor": false,
+    "best_for": "코딩을 전혀 모르는 1인 창업가·기획자·마케터가 프롬프트만으로 디자인+Supabase DB+인증+배포까지 원클릭 완성할 때",
+    "billing_unit": {
+      "name": "Message Credits (월간 메시지 횟수)",
+      "calculation_rule": "코드 생성·수정·버그 픽스 요청 메시지 1회당 1 Credit 차감 (파일 크기와 무관하게 1회당 고정 1차감)",
+      "simulation_10step_1000runs": "Starter $20/월 기준 월 100 메시지 제공 — 단, 에러 디버깅 루프 발생 시 100회가 빠르게 소진되어 $50~$100+ 구간 진입 주의"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "일 5회 메시지 (월 최대 30~50회 제한)",
+        "key_features": ["퍼블릭 프로젝트 생성", "원클릭 웹 배포 및 Supabase 연동 테스트"]
+      },
+      {
+        "tier": "Starter",
+        "price_annual": "$20/월",
+        "price_monthly": "$20/월",
+        "quota": "월 100 Message Credits (+ 일일 무료 보너스)",
+        "key_features": ["프라이빗 프로젝트 허용", "커스텀 도메인 연결", "GitHub 양방향 동기화"]
+      },
+      {
+        "tier": "Launch / Scale",
+        "price_annual": "$50~$100+/월",
+        "price_monthly": "$50~$100+/월",
+        "quota": "월 250 ~ 500+ Message Credits",
+        "key_features": ["본격적인 MVP 빌드 및 잦은 UI/DB 수정 시 필수 구간"]
+      }
+    ],
+    "pros": [
+      "비개발자도 환경 세팅 없이 프롬프트 몇 줄로 감각적인 UI와 Supabase 백엔드(로그인·DB)가 연결된 실동작 웹앱을 10분 만에 구축 가능",
+      "Bolt.new와 달리 프로젝트 파일이 커져도 '메시지 1회 = 1 크레딧'으로 명확하게 차감되어 토큰 폭탄 위험이 덜함",
+      "GitHub 양방향 동기화를 지원하여 추후 Cursor나 Windsurf로 코드를 내려받아 이어서 개발하기 완벽함"
+    ],
+    "cons": [
+      "Starter($20/월)의 기본 제공량이 월 100 메시지에 불과해, 복잡한 기능 구현 중 '디버깅 루프(에러 수정 반복)'에 빠지면 하루이틀 만에 크레딧이 바닥남",
+      "세밀한 비즈니스 로직 수정 시 결국 $50~$100/월 상위 요금제로 업그레이드해야 하는 경우가 많음"
+    ],
+    "relay_migration_fit": "외주 개발비 수백만 원을 아끼고 직접 SaaS MVP나 랜딩페이지를 당일 런칭하려는 1인 창업가에게 압도적 1위",
+    "alternative_tip": {
+      "target_id": "cursor",
+      "target_name": "Cursor",
+      "label": "💡 뼈대는 Lovable($20)로 만들고, 반복 수정은 GitHub 연동 후 Cursor($20/500회)로 하면 비용 70% 절약! →"
+    },
+    "main_cta_label": "👉 Lovable 무료 체험으로 10분 만에 웹앱 만들기",
+    "btn_theme": "lindy"
+  },
+  {
+    "id": "bolt",
+    "name": "Bolt.new (by StackBlitz)",
+    "slug": "bolt-new",
+    "official_url": "https://bolt.new",
+    "pricing_url": "https://bolt.new",
+    "category_group": "vibe-coding",
+    "category_label": "💻 AI 바이브 코딩 & 풀스택 빌더",
+    "category": "Browser-Based Full-Stack WebContainer Builder",
+    "role_tags": ["founder", "developer"],
+    "badge_label": "비교 기준 (토큰 급증 주의)",
+    "is_anchor": true,
+    "best_for": "로컬 설치 없이 브라우저 안에서 즉시 Node.js 풀스택 프로토타입과 UI 시안을 초고속으로 띄워보고 싶은 빌더",
+    "billing_unit": {
+      "name": "Tokens (월간 입출력 토큰량)",
+      "calculation_rule": "프롬프트 전송 및 코드 생성 시 프로젝트 컨텍스트 크기에 비례하여 토큰 차감 (Pro $20/월 = 1,000만 토큰)",
+      "simulation_10step_1000runs": "파일 20개 이상 중형 앱에서 500회 수정 시 매번 전체 컨텍스트가 재전송되어 1,000만 토큰을 초과, 월 $50~$100+ 토큰 충전 발생 주의"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "일일/월간 소량 무료 토큰 제한",
+        "key_features": ["브라우저 내 WebContainer 즉시 실행", "단순 UI 프로토타이핑"]
+      },
+      {
+        "tier": "Pro",
+        "price_annual": "$20/월",
+        "price_monthly": "$20/월",
+        "quota": "1,000만 (10M) Tokens / 월",
+        "key_features": ["프라이빗 프로젝트", "Netlify 원클릭 배포"]
+      },
+      {
+        "tier": "Pro 50 / Pro 100",
+        "price_annual": "$50~$100/월",
+        "price_monthly": "$50~$100/월",
+        "quota": "2,600만 ~ 5,500만 Tokens / 월",
+        "key_features": ["중대형 웹앱 개발 및 디버깅 시 강제 진입 구간"]
+      }
+    ],
+    "pros": [
+      "StackBlitz의 WebContainers 기술 덕분에 브라우저 탭 하나에서 npm 패키지 설치부터 서버 구동까지 빛의 속도로 실행됨",
+      "초기 단일 페이지 앱이나 빠른 해커톤 시안 제작 시 압도적인 속도감 제공"
+    ],
+    "cons": [
+      "치명적 과금 함정: 프로젝트가 커지고 파일 수가 늘어나면 작은 버튼 색상 하나만 수정해도 전체 코드 컨텍스트를 재전송하여 1회 요청에 수만~수십만 토큰이 증발함",
+      "에러 수정 루프에 한 번 빠지면 Pro($20/월)의 1,000만 토큰이 단 며칠 만에 소진되어 예상치 못한 토큰 추가 결제 폭탄을 맞기 쉬움"
+    ],
+    "relay_migration_fit": "초기 프로토타입 생성 후 반드시 로컬 에디터(Cursor/Windsurf)로 코드를 빼내어 유지보수하는 하이브리드 전략 권장",
+    "alternative_tip": {
+      "target_id": "lovable",
+      "target_name": "Lovable",
+      "label": "💡 파일 크기와 무관하게 1회당 1크레딧만 차감되는 빌더를 원한다면? Lovable($20/월) 보기 →"
+    },
+    "main_cta_label": "💡 가성비 대안 보기 (Lovable / Cursor)",
+    "btn_theme": "make"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "slug": "elevenlabs",
+    "official_url": "https://elevenlabs.io",
+    "pricing_url": "https://elevenlabs.io/pricing",
+    "category_group": "ai-media",
+    "category_label": "🎬 AI 보이스 · 아바타 · 영상 생성",
+    "category": "AI Voice Generator, Dubbing & Voice Cloning",
+    "role_tags": ["marketer", "founder", "developer"],
+    "badge_label": "AI 성우·더빙 압도적 1위",
+    "is_anchor": false,
+    "best_for": "유튜브·릴스·쇼츠 크리에이터, 글로벌 마케팅 영상 다국어 더빙, 오디오북 및 AI 에이전트 음성 인터페이스(Voice AI) 구축팀",
+    "billing_unit": {
+      "name": "Characters / Credits (글자 수 기반 크레딧)",
+      "calculation_rule": "음성으로 변환(TTS)하는 텍스트 글자 수(공백 포함)만큼 크레딧 차감 (단, 억양 마음에 안 들어 재생성 시에도 동일 차감)",
+      "simulation_10step_1000runs": "월 30분 분량(약 25,000자) 성우 나레이션 제작 시 Starter($5/월)로 완벽 커버, 100분 분량은 Creator($22/월)"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "10,000 Credits/월 (약 10분 오디오)",
+        "key_features": ["비상업적 용도 제한 (출처 표기 필수)", "기본 다국어 TTS 생성"]
+      },
+      {
+        "tier": "Starter",
+        "price_annual": "$4.17/월",
+        "price_monthly": "$5/월",
+        "quota": "30,000 Credits/월 (약 30분 오디오)",
+        "key_features": ["상업적 이용 라이선스 포함", "즉시 보이스 클로닝(Instant Voice Cloning)", "더빙 스튜디오 접근"]
+      },
+      {
+        "tier": "Creator",
+        "price_annual": "$18.33/월",
+        "price_monthly": "$22/월 (첫 달 $11)",
+        "quota": "100,000 Credits/월 (약 100분 오디오)",
+        "key_features": ["프로페셔널 보이스 클로닝(PVC)", "192kbps 고음질 오디오 출력", "사용량 기반 추가 충전 지원"]
+      }
+    ],
+    "pros": [
+      "한국어를 포함한 32개 이상 언어에서 실제 성우와 구별하기 힘든 감정 표현·호흡·억양 품질로 업계 압도적 1위",
+      "단 월 $5(Starter)부터 상업적 권리와 내 목소리 복제(Instant Voice Cloning)를 모두 제공하여 진입장벽이 매우 낮음",
+      "개발자용 저지연 Conversational AI 및 TTS API 생태계가 가장 성숙함"
+    ],
+    "cons": [
+      "특정 문장의 억양이나 감정선이 어색해 '재생성(Regenerate)' 버튼을 누를 때마다 글자 수 크레딧이 또 차감됨",
+      "긴 문단을 한 번에 생성했다가 수정하면 크레딧 손실이 크므로 반드시 짧은 문장 단위로 끊어서 생성해야 요금을 아낄 수 있음"
+    ],
+    "relay_migration_fit": "마케팅 숏폼 영상, 강의 더빙, 글로벌 세일즈 콘텐츠를 외주 성우 비용 없이 인하우스에서 즉시 양산할 때 필수",
+    "alternative_tip": {
+      "target_id": "heygen",
+      "target_name": "HeyGen",
+      "label": "💡 목소리뿐만 아니라 말하는 AI 인물 영상(립싱크 아바타)까지 함께 만들려면? HeyGen 보기 →"
+    },
+    "main_cta_label": "👉 ElevenLabs 무료 체험 & Starter($5/월) 시작하기",
+    "btn_theme": "elevenlabs"
+  },
+  {
+    "id": "heygen",
+    "name": "HeyGen",
+    "slug": "heygen",
+    "official_url": "https://www.heygen.com",
+    "pricing_url": "https://www.heygen.com/pricing",
+    "category_group": "ai-media",
+    "category_label": "🎬 AI 보이스 · 아바타 · 영상 생성",
+    "category": "AI Avatar Video & Multilingual Lip-Sync",
+    "role_tags": ["marketer", "founder"],
+    "badge_label": "마케팅 AI 아바타 1위",
+    "is_anchor": false,
+    "best_for": "카메라 앞에 서지 않고 대표자 디지털 트윈(아바타)으로 유튜브·제품 소개·교육 영상·다국어 립싱크 광고를 대량 제작하는 마케터 및 창업가",
+    "billing_unit": {
+      "name": "Video Length & Premium Avatar Credits",
+      "calculation_rule": "Creator($29/월) 플랜에서 기본 아바타 영상 생성 지원 (단, 차세대 Avatar IV 모션 및 4K/비디오 번역은 프리미엄 크레딧 별도 차감)",
+      "simulation_10step_1000runs": "주 3~5편의 마케팅·교육용 AI 아바타 쇼츠/유튜브 제작 시 Creator($29/월, 연간 $24/월)로 스튜디오 촬영비 월 수백만 원 대체"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "월 3편 무료 영상 (최대 3분, 720p, 워터마크)",
+        "key_features": ["기본 퍼블릭 아바타 테스트", "커스텀 디지털 트윈 1개 체험"]
+      },
+      {
+        "tier": "Creator",
+        "price_annual": "$24/월",
+        "price_monthly": "$29/월",
+        "quota": "무제한 표준 아바타 영상 (최대 30분/편, 1080p)",
+        "key_features": ["워터마크 제거", "음성 및 입모양(Lip-sync) 자동 번역", "브랜드 키트 및 빠른 렌더링"]
+      },
+      {
+        "tier": "Team",
+        "price_annual": "$30/석/월",
+        "price_monthly": "$39/석/월",
+        "quota": "4K 해상도 지원 + 팀 워크스페이스 협업",
+        "key_features": ["다중 커스텀 아바타 관리", "팀 리뷰 및 승인 워크플로우"]
+      }
+    ],
+    "pros": [
+      "웹캠이나 스마트폰으로 2분만 촬영하면 내 얼굴·제스처·목소리를 똑같이 재현하는 디지털 트윈 아바타 생성 가능",
+      "한국어 영상을 영어·일본어·스페인어로 변환할 때 입모양(Lip-sync)까지 해당 언어 발음에 맞춰 자연스럽게 재합성하는 기술 세계 1위",
+      "ElevenLabs 음성과 네이티브 연동되어 최상급 보이스+아바타 조합 구현 가능"
+    ],
+    "cons": [
+      "'무제한 영상' 문구와 달리 최신 고화질 Avatar IV 엔진이나 고급 비디오 번역 기능에는 별도 생성 크레딧 한도가 적용됨",
+      "렌더링 완료 후 오탈자를 발견해 재렌더링하면 프리미엄 크레딧이 중복 차감되므로 오디오 스크립트 사전 검수가 필수적임"
+    ],
+    "relay_migration_fit": "1인 창업가와 마케팅 팀이 얼굴 노출 부담이나 스튜디오 대관 없이 매일 글로벌 숏폼·세일즈 영상을 발행하는 최고의 무기",
+    "alternative_tip": {
+      "target_id": "elevenlabs",
+      "target_name": "ElevenLabs",
+      "label": "💡 아바타 영상의 한국어 내레이션 품질을 극대화하려면? ElevenLabs($5/월) 음성 연동하기 →"
+    },
+    "main_cta_label": "👉 HeyGen 무료 영상 3편 체험 & Creator 시작하기",
+    "btn_theme": "heygen"
+  },
+  {
+    "id": "runway",
+    "name": "Runway (Gen-3 Alpha)",
+    "slug": "runway",
+    "official_url": "https://runwayml.com",
+    "pricing_url": "https://runwayml.com/pricing",
+    "category_group": "ai-media",
+    "category_label": "🎬 AI 보이스 · 아바타 · 영상 생성",
+    "category": "Cinematic Generative AI Video Studio",
+    "role_tags": ["marketer", "founder"],
+    "badge_label": "비교 기준 (실패 컷 과금 주의)",
+    "is_anchor": true,
+    "best_for": "시네마틱 광고 B-roll, 브랜드 필름, 정교한 카메라 워킹·모션 브러시 제어가 필요한 영상 디자이너 및 크리에이티브 디렉터",
+    "billing_unit": {
+      "name": "Credits (초당 영상 생성 크레딧)",
+      "calculation_rule": "Gen-3 Alpha Turbo 기준 1초당 5 Credits 차감 (10초 클립 = 50 Credits), Gen-3 Alpha 표준은 1초당 10 Credits 차감",
+      "simulation_10step_1000runs": "Standard($12/월) 제공 625 크레딧으로 Turbo 기준 약 125초(10초 클립 12개) 생성 가능 — 단, 실패한 컷에도 크레딧 차감 주의"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "125 Credits (가입 시 1회성 제공, 리필 없음)",
+        "key_features": ["Gen-3 Alpha Turbo 테스트", "720p 워터마크 포함"]
+      },
+      {
+        "tier": "Standard",
+        "price_annual": "$12/월",
+        "price_monthly": "$15/월",
+        "quota": "625 Credits/월 (Gen-3 Turbo 약 125초)",
+        "key_features": ["워터마크 제거", "고해상도 업스케일링", "크레딧 추가 구매 가능"]
+      },
+      {
+        "tier": "Pro",
+        "price_annual": "$28/월",
+        "price_monthly": "$35/월",
+        "quota": "2,250 Credits/월 (Gen-3 Turbo 약 450초)",
+        "key_features": ["커스텀 보이스 및 대량 에셋 스토리지"]
+      },
+      {
+        "tier": "Unlimited",
+        "price_annual": "$76/월",
+        "price_monthly": "$95/월",
+        "quota": "Explore 모드 무제한 생성 + 2,250 Fast Credits",
+        "key_features": ["크레딧 차감 걱정 없이 수백 번 재촬영(Retake)해야 하는 프로 제작자용"]
+      }
+    ],
+    "pros": [
+      "헐리우드 및 상업 광고 현장에서 검증된 시네마틱 색감, 정밀한 카메라 컨트롤, Motion Brush 등 전문 영상 편집 기능 보유",
+      "Unlimited($76/월) 플랜 선택 시 Explore 모드에서 크레딧 소진 걱정 없이 무제한 프롬프트 실험이 가능함"
+    ],
+    "cons": [
+      "Standard($12/월, 625 Cr) 플랜에서는 10초짜리 영상 하나에 50~100 크레딧이 차감되어, 마음에 드는 1컷을 건지기 위해 4~5번 재생성(Gacha)하면 단 2~3컷 만에 한 달 치 크레딧이 증발함",
+      "미사용 월간 크레딧이 다음 달로 이월되지 않음"
+    ],
+    "relay_migration_fit": "텍스트만으로 바로 영상을 뽑기보다 Midjourney/나노바나나로 첫 프레임 이미지를 먼저 확정(Image-to-Video)한 뒤 돌려야 크레딧 낭비를 막을 수 있음",
+    "alternative_tip": {
+      "target_id": "kling",
+      "target_name": "Kling AI",
+      "label": "💡 더 저렴한 비용으로 역동적인 인물·물리 모션 영상을 뽑고 싶다면? 가성비 대안 Kling AI(~$10/월) 보기 →"
+    },
+    "main_cta_label": "💡 가성비 대안 보기 (Kling AI / HeyGen)",
+    "btn_theme": "kling"
+  },
+  {
+    "id": "kling",
+    "name": "Kling AI",
+    "slug": "kling-ai",
+    "official_url": "https://klingai.com",
+    "pricing_url": "https://klingai.com",
+    "category_group": "ai-media",
+    "category_label": "🎬 AI 보이스 · 아바타 · 영상 생성",
+    "category": "High-Motion Cost-Effective AI Video Generator",
+    "role_tags": ["marketer", "founder"],
+    "badge_label": "고가성비 AI 영상 대안",
+    "is_anchor": false,
+    "best_for": "Runway 대비 합리적인 크레딧 단가로 자연스러운 인물 동작, 물리 법칙 구현, 바이럴 숏폼 비디오 클립을 대량 생성하려는 크리에이터",
+    "billing_unit": {
+      "name": "Inspiration Credits (모션 영상 생성 크레딧)",
+      "calculation_rule": "Standard Mode(5초 클립 = 10~20 Credits) vs Professional Mode(고화질·고프레임 차등 차감)",
+      "simulation_10step_1000runs": "Standard(~$10/월, 660 Credits)로 표준 5초 클립 최대 33~66개 생성 가능하여 Runway 대비 클립당 단가 우수"
+    },
+    "pricing_tiers": [
+      {
+        "tier": "Free",
+        "price_annual": "$0/월",
+        "price_monthly": "$0/월",
+        "quota": "일일 무료 로그인 크레딧(66 Cr) 제공",
+        "key_features": ["워터마크 포함 표준 모드 테스트", "대기열(Queue) 후순위 처리"]
+      },
+      {
+        "tier": "Standard",
+        "price_annual": "~$8.80/월",
+        "price_monthly": "~$10/월 (프로모션 ~$6.99)",
+        "quota": "660 Credits/월",
+        "key_features": ["워터마크 제거", "Professional 고품질 모드 해금", "우선 렌더링 큐 및 길이 연장"]
+      },
+      {
+        "tier": "Pro",
+        "price_annual": "~$25.96/월",
+        "price_monthly": "~$37/월",
+        "quota": "3,000 Credits/월",
+        "key_features": ["숏폼 대량 제작 및 마스터링 크리에이터용"]
+      }
+    ],
+    "pros": [
+      "월 ~$10 안팎의 가성비 요금제로 660 크레딧을 제공하여 클립당 생성 단가가 Runway 대비 훨씬 경제적임",
+      "인물의 걸음걸이, 손동작, 음식 먹기 등 복잡한 3D 물리 모션 일관성과 시작-끝 프레임 제어(Start/End Frame) 성능이 뛰어남",
+      "일일 무료 크레딧으로도 사전 프롬프트 테스트를 충분히 해볼 수 있음"
+    ],
+    "cons": [
+      "최고 화질인 Professional Mode + 10초 연장 + 카메라 제어를 동시에 켜면 크레딧 소모량이 일반 모드 대비 3.5~7배로 급증함",
+      "글로벌 피크 타임에는 무료 및 저가 티어에서 렌더링 대기 시간이 길어질 수 있음"
+    ],
+    "relay_migration_fit": "숏폼 광고 소재 A/B 테스트용 배경 영상과 모션 클립을 저비용으로 다량 확보하려는 마케터에게 최적",
+    "alternative_tip": {
+      "target_id": "heygen",
+      "target_name": "HeyGen",
+      "label": "💡 배경 영상이 아니라 대사를 직접 말하는 발표자 영상이 필요하다면? HeyGen($29/월) 보기 →"
+    },
+    "main_cta_label": "👉 Kling AI 공식 가격표 & 무료 크레딧 시작하기",
+    "btn_theme": "kling"
+  }
+]
